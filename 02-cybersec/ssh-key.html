@@ -1,0 +1,384 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>SSH Key - Wetofu</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../favicon.png">
+        
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> Kenalan</a></li><li class="chapter-item expanded "><a href="../00-intro/index.html"><strong aria-hidden="true">2.</strong> Mata Kuliah</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../00-intro/informatika.html"><strong aria-hidden="true">2.1.</strong> Informatika</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../00-intro/pbo.html"><strong aria-hidden="true">2.1.1.</strong> PBO</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../00-intro/pbo-java-generic.html"><strong aria-hidden="true">2.1.1.1.</strong> Java Generics</a></li><li class="chapter-item expanded "><a href="../00-intro/pbo-string-operation.html"><strong aria-hidden="true">2.1.1.2.</strong> String Operation</a></li><li class="chapter-item expanded "><a href="../00-intro/pbo-regex.html"><strong aria-hidden="true">2.1.1.3.</strong> Regex</a></li><li class="chapter-item expanded "><a href="../00-intro/pbo-exception-assertion.html"><strong aria-hidden="true">2.1.1.4.</strong> Exception &amp; Assertion</a></li><li class="chapter-item expanded "><a href="../00-intro/pbo-input-output.html"><strong aria-hidden="true">2.1.1.5.</strong> I/O</a></li></ol></li><li class="chapter-item expanded "><a href="../00-intro/basis-data.html"><strong aria-hidden="true">2.1.2.</strong> Basdat</a></li><li class="chapter-item expanded "><a href="../05-jarkom/index.html"><strong aria-hidden="true">2.1.3.</strong> Jarkom</a></li></ol></li><li class="chapter-item expanded "><a href="../00-intro/kimia.html"><strong aria-hidden="true">2.2.</strong> Kimia</a></li><li class="chapter-item expanded "><a href="../00-intro/teknik-elektro.html"><strong aria-hidden="true">2.3.</strong> Teknik Elektro</a></li></ol></li><li class="chapter-item expanded "><a href="../02-cybersec/index.html"><strong aria-hidden="true">3.</strong> Cyber Security</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../02-cybersec/konsep-tcp-ip.html"><strong aria-hidden="true">3.1.</strong> Konsep TCP/IP</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.2.</strong> IPv6</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.3.</strong> Routing</div></li><li class="chapter-item expanded "><a href="../02-cybersec/kernel.html"><strong aria-hidden="true">3.4.</strong> Kernel</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.5.</strong> Network Programming</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.6.</strong> Persiapan Hacking</div></li><li class="chapter-item expanded "><a href="../02-cybersec/footprinting.html"><strong aria-hidden="true">3.7.</strong> Footprinting</a></li><li class="chapter-item expanded "><a href="../02-cybersec/information-gathering.html"><strong aria-hidden="true">3.8.</strong> Information Gathering</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.9.</strong> Sniffing</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.10.</strong> Spoffing</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.11.</strong> Hacking Wireless</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.12.</strong> Attack password</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.13.</strong> Attack database SQL</div></li><li class="chapter-item expanded "><a href="../02-cybersec/mitm.html"><strong aria-hidden="true">3.14.</strong> MITM</a></li><li class="chapter-item expanded "><a href="../02-cybersec/metasploit.html"><strong aria-hidden="true">3.15.</strong> Metasploit</a></li><li class="chapter-item expanded "><a href="../02-cybersec/deface.html"><strong aria-hidden="true">3.16.</strong> Deface WEB</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../02-cybersec/defacing-routing.html"><strong aria-hidden="true">3.16.1.</strong> Defacing Routing</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.17.</strong> Attack File Sharing</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.18.</strong> Vulnerability Analysis</div></li><li class="chapter-item expanded "><a href="../02-cybersec/dvwa.html"><strong aria-hidden="true">3.19.</strong> DVWA</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../02-cybersec/dvwa-bruteforce.html"><strong aria-hidden="true">3.19.1.</strong> Brute Force</a></li><li class="chapter-item expanded "><a href="../02-cybersec/dvwa-command-injection.html"><strong aria-hidden="true">3.19.2.</strong> Command Injection</a></li><li class="chapter-item expanded "><a href="../02-cybersec/dvwa-sql-injection.html"><strong aria-hidden="true">3.19.3.</strong> SQL Injection</a></li><li class="chapter-item expanded "><a href="../02-cybersec/dvwa-upload-vuln.html"><strong aria-hidden="true">3.19.4.</strong> Upload Vuln</a></li><li class="chapter-item expanded "><a href="../02-cybersec/dvwa-xss.html"><strong aria-hidden="true">3.19.5.</strong> XSS</a></li><li class="chapter-item expanded "><a href="../02-cybersec/dvwa-xsrf.html"><strong aria-hidden="true">3.19.6.</strong> XSRF</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.20.</strong> Dasar Pengamanan Server</div></li><li class="chapter-item expanded "><a href="../02-cybersec/proxy.html"><strong aria-hidden="true">3.21.</strong> Proxy</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ssh.html"><strong aria-hidden="true">3.22.</strong> SSH</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../02-cybersec/ssh-configure.html"><strong aria-hidden="true">3.22.1.</strong> Configure SSH</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ssh-key.html" class="active"><strong aria-hidden="true">3.22.2.</strong> SSH Key</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ssh-port-forwarding.html"><strong aria-hidden="true">3.22.3.</strong> SSH Port Forwarding</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ssh-port.html"><strong aria-hidden="true">3.22.4.</strong> SSH Port</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ssh-remote.html"><strong aria-hidden="true">3.22.5.</strong> SSH Remote</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ssh-reverse.html"><strong aria-hidden="true">3.22.6.</strong> SSH Reverse</a></li></ol></li><li class="chapter-item expanded "><a href="../02-cybersec/vpn.html"><strong aria-hidden="true">3.23.</strong> VPN</a></li><li class="chapter-item expanded "><a href="../02-cybersec/proxy-vs-vpn.html"><strong aria-hidden="true">3.24.</strong> Proxy VS VPN</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.25.</strong> Web Application Firewall</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.26.</strong> Pertahanan Host</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.27.</strong> Basic Data Security</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.28.</strong> Forensic</div></li><li class="chapter-item expanded "><a href="../02-cybersec/stay-anonymous.html"><strong aria-hidden="true">3.29.</strong> Stay Anonymous</a></li><li class="chapter-item expanded "><a href="../02-cybersec/deepweeb.html"><strong aria-hidden="true">3.30.</strong> Deep Web</a></li><li class="chapter-item expanded "><a href="../02-cybersec/torrent.html"><strong aria-hidden="true">3.31.</strong> Torrent</a></li><li class="chapter-item expanded "><a href="../02-cybersec/cisco-cs.html"><strong aria-hidden="true">3.32.</strong> Cisco Cybersecurity</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../02-cybersec/categorizing-security-vulnerabilities.html"><strong aria-hidden="true">3.32.1.</strong> Categorizing Security Vulnerabilities</a></li><li class="chapter-item expanded "><a href="../02-cybersec/types-of-malware.html"><strong aria-hidden="true">3.32.2.</strong> Types of Malware</a></li><li class="chapter-item expanded "><a href="../02-cybersec/symptoms-of-malware.html"><strong aria-hidden="true">3.32.3.</strong> Symptoms of Malware</a></li><li class="chapter-item expanded "><a href="../02-cybersec/social-engineering.html"><strong aria-hidden="true">3.32.4.</strong> Social Engineering</a></li><li class="chapter-item expanded "><a href="../02-cybersec/wifi-password-cracking.html"><strong aria-hidden="true">3.32.5.</strong> Wi-Fi Password Cracking</a></li><li class="chapter-item expanded "><a href="../02-cybersec/phishing.html"><strong aria-hidden="true">3.32.6.</strong> Phishing</a></li><li class="chapter-item expanded "><a href="../02-cybersec/vulnerability-exploitation.html"><strong aria-hidden="true">3.32.7.</strong> Vulnerability Exploitation</a></li><li class="chapter-item expanded "><a href="../02-cybersec/dos.html"><strong aria-hidden="true">3.32.8.</strong> Dos</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ddos.html"><strong aria-hidden="true">3.32.9.</strong> DDoS</a></li><li class="chapter-item expanded "><a href="../02-cybersec/seo-poisoning.html"><strong aria-hidden="true">3.32.10.</strong> SEO Poisoning</a></li><li class="chapter-item expanded "><a href="../02-cybersec/blended-attack.html"><strong aria-hidden="true">3.32.11.</strong> Blended Attack</a></li><li class="chapter-item expanded "><a href="../02-cybersec/attacks-concepts-techniques.html"><strong aria-hidden="true">3.32.12.</strong> Attacks, Concepts and Techniques</a></li><li class="chapter-item expanded "><a href="../02-cybersec/impact-reduction.html"><strong aria-hidden="true">3.32.13.</strong> Impact Reduction</a></li><li class="chapter-item expanded "><a href="../02-cybersec/protect-your-computing-devices.html"><strong aria-hidden="true">3.32.14.</strong> Protect Your Computing Devices</a></li><li class="chapter-item expanded "><a href="../02-cybersec/encrypt-your-data.html"><strong aria-hidden="true">3.32.15.</strong> Encrypt Your Data</a></li><li class="chapter-item expanded "><a href="../02-cybersec/two-factor-authentication.html"><strong aria-hidden="true">3.32.16.</strong> Two Factor Authentication</a></li><li class="chapter-item expanded "><a href="../02-cybersec/oauth2.0.html"><strong aria-hidden="true">3.32.17.</strong> OAuth 2.0</a></li><li class="chapter-item expanded "><a href="../02-cybersec/email-and-web-browser-privacy.html"><strong aria-hidden="true">3.32.18.</strong> Email and Web Browser Privacy</a></li><li class="chapter-item expanded "><a href="../02-cybersec/firewall-types.html"><strong aria-hidden="true">3.32.19.</strong> Firewall Types</a></li><li class="chapter-item expanded "><a href="../02-cybersec/port-scanning.html"><strong aria-hidden="true">3.32.20.</strong> Port Scanning</a></li><li class="chapter-item expanded "><a href="../02-cybersec/security-appliances.html"><strong aria-hidden="true">3.32.21.</strong> Security Appliances</a></li><li class="chapter-item expanded "><a href="../02-cybersec/detecting-attacks-in-real-time.html"><strong aria-hidden="true">3.32.22.</strong> Detecting Attacks in Real Time</a></li><li class="chapter-item expanded "><a href="../02-cybersec/protecting-against-malware.html"><strong aria-hidden="true">3.32.23.</strong> Protecting Against Malware</a></li><li class="chapter-item expanded "><a href="../02-cybersec/security-best-practices.html"><strong aria-hidden="true">3.32.24.</strong> Security Best Practices</a></li><li class="chapter-item expanded "><a href="../02-cybersec/botnet.html"><strong aria-hidden="true">3.32.25.</strong> Botnet</a></li><li class="chapter-item expanded "><a href="../02-cybersec/the-kill-chain-in-cyberdefense.html"><strong aria-hidden="true">3.32.26.</strong> The Kill Chain in Cyberdefense</a></li><li class="chapter-item expanded "><a href="../02-cybersec/behavior-based-security.html"><strong aria-hidden="true">3.32.27.</strong> Behavior-Based Security</a></li><li class="chapter-item expanded "><a href="../02-cybersec/netflow.html"><strong aria-hidden="true">3.32.28.</strong> NetFlow</a></li><li class="chapter-item expanded "><a href="../02-cybersec/security-playbook.html"><strong aria-hidden="true">3.32.29.</strong> Security Playbook</a></li><li class="chapter-item expanded "><a href="../02-cybersec/tools-for-incident-prevention-and-detection.html"><strong aria-hidden="true">3.32.30.</strong> Tools for Incident Prevention and Detection</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ids-and-ips.html"><strong aria-hidden="true">3.32.31.</strong> IDS and IPS</a></li><li class="chapter-item expanded "><a href="../02-cybersec/csirt.html"><strong aria-hidden="true">3.32.32.</strong> CSIRT</a></li><li class="chapter-item expanded "><a href="../02-cybersec/legal-issues-in-cybersecurity.html"><strong aria-hidden="true">3.32.33.</strong> Legal Issues in Cybersecurity</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ethical-issues-in-cybersecurity.html"><strong aria-hidden="true">3.32.34.</strong> Ethical Issues in Cybersecurity</a></li><li class="chapter-item expanded "><a href="../02-cybersec/cybersecurity-jobs.html"><strong aria-hidden="true">3.32.35.</strong> Cybersecurity Jobs</a></li></ol></li><li class="chapter-item expanded "><a href="../02-cybersec/ma-index.html"><strong aria-hidden="true">3.33.</strong> MOOC Aptikom</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../02-cybersec/ma-spp.html"><strong aria-hidden="true">3.33.1.</strong> Security Perimeter Protection</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ma-nid.html"><strong aria-hidden="true">3.33.2.</strong> Network and Internet Defense</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ma-firewall.html"><strong aria-hidden="true">3.33.3.</strong> Firewall</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ma-scp.html"><strong aria-hidden="true">3.33.4.</strong> Security Concerns &amp; Penetration</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ma-ptm.html"><strong aria-hidden="true">3.33.5.</strong> Penetration Testing Methodology</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ma-rtwm.html"><strong aria-hidden="true">3.33.6.</strong> Real Time Web Monitoring</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ma-wav.html"><strong aria-hidden="true">3.33.7.</strong> Web Attack Visualisation</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ma-ctrtm.html"><strong aria-hidden="true">3.33.8.</strong> Cyber-Threat Real Time Map</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ma-ctrts.html"><strong aria-hidden="true">3.33.9.</strong> Cyber-Threat Real Time Statistics</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ma-fctm.html"><strong aria-hidden="true">3.33.10.</strong> Fireeye Cyber Threat Map</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ma-ddam.html"><strong aria-hidden="true">3.33.11.</strong> Ddos Digital Attack Map</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ma-daw.html"><strong aria-hidden="true">3.33.12.</strong> Ddos Attack Worldwide</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ma-mss.html"><strong aria-hidden="true">3.33.13.</strong> Malware And Security Scan</a></li><li class="chapter-item expanded "><a href="../02-cybersec/ma-dn.html"><strong aria-hidden="true">3.33.14.</strong> The Dark Net</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../05-jarkom/index.html"><strong aria-hidden="true">4.</strong> Jaringan Komputer</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.</strong> Pendahuluan</div></li><li class="chapter-item expanded "><a href="../05-jarkom/wireshark.html"><strong aria-hidden="true">4.2.</strong> Wireshark</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.3.</strong> Simulator Jaringan</div></li><li class="chapter-item expanded "><a href="../05-jarkom/perangkat-keras-jaringan-dan-data-link-layer.html"><strong aria-hidden="true">4.4.</strong> Perangkat Keras Jaringan &amp; Data Link Layer</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../05-jarkom/data-link-layer.html"><strong aria-hidden="true">4.4.1.</strong> Data Link Layer</a></li><li class="chapter-item expanded "><a href="../05-jarkom/lebihdetail-data-link-layer.html"><strong aria-hidden="true">4.4.2.</strong> Lebih Detail Data Link Layer</a></li><li class="chapter-item expanded "><a href="../05-jarkom/ethernet.html"><strong aria-hidden="true">4.4.3.</strong> Ethernet</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.4.4.</strong> Wireless Internet</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.4.5.</strong> MAC Address</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.4.6.</strong> Teknologi ADSL</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.4.7.</strong> Wireless Internet Wifi</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.4.8.</strong> Teknik Modulasi</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.5.</strong> Perangkat WiFi / Wireless Internet</div></li><li class="chapter-item expanded "><a href="../05-jarkom/switch-hub.html"><strong aria-hidden="true">4.6.</strong> Switch &amp; Hub</a></li><li class="chapter-item expanded "><a href="../05-jarkom/network-layer-ipv4.html"><strong aria-hidden="true">4.7.</strong> Network Layer IPv4</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../05-jarkom/network-layer.html"><strong aria-hidden="true">4.7.1.</strong> Network Layer</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.7.2.</strong> IPv4</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.8.</strong> Transport Layer</div></li><li class="chapter-item expanded "><a href="../05-jarkom/dns-pengaturanInternet.html"><strong aria-hidden="true">4.9.</strong> Domain Name System &amp; Pengaturan Internet</a></li><li class="chapter-item expanded "><a href="../05-jarkom/dns-server.html"><strong aria-hidden="true">4.10.</strong> Install DNS Server</a></li><li class="chapter-item expanded "><a href="../05-jarkom/routing-nat.html"><strong aria-hidden="true">4.11.</strong> Routing &amp; NAT</a></li><li class="chapter-item expanded "><a href="../05-jarkom/mikrotik.html"><strong aria-hidden="true">4.12.</strong> Mikrotik</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../05-jarkom/mikrotik-basicNetworking.html"><strong aria-hidden="true">4.12.1.</strong> Basic Networking</a></li><li class="chapter-item expanded "><a href="../05-jarkom/mikrotik-vpn.html"><strong aria-hidden="true">4.12.2.</strong> VPN</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../05-jarkom/mikrotik-vpn-pptp.html"><strong aria-hidden="true">4.12.2.1.</strong> VPN-PPTP</a></li><li class="chapter-item expanded "><a href="../05-jarkom/mikrotik-vpn-sstp.html"><strong aria-hidden="true">4.12.2.2.</strong> VPN-SSTP</a></li><li class="chapter-item expanded "><a href="../05-jarkom/mikrotik-vpn-lt2p.html"><strong aria-hidden="true">4.12.2.3.</strong> VPN-L2TP</a></li><li class="chapter-item expanded "><a href="../05-jarkom/mikrotik-vpn-openvpn.html"><strong aria-hidden="true">4.12.2.4.</strong> VPN-OpenVPN</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../05-jarkom/cisco.html"><strong aria-hidden="true">4.13.</strong> Cisco</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../05-jarkom/cisco-packettracer.html"><strong aria-hidden="true">4.13.1.</strong> Cisco Packet Tracer</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../05-jarkom/cisco-pt-midQuiz.html"><strong aria-hidden="true">4.13.1.1.</strong> Basic Quiz</a></li><li class="chapter-item expanded "><a href="../05-jarkom/cisco-pt-Quiz.html"><strong aria-hidden="true">4.13.1.2.</strong> IoT Basic Quiz</a></li></ol></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.14.</strong> Web / Content Management System</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.15.</strong> e-mail / SMTP / POP3 / IMAP / Webmail</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.16.</strong> VoIP / Internet Telepon</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.17.</strong> Streaming Multimedia</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.18.</strong> IPv6</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.19.</strong> Hacking</div></li><li class="chapter-item expanded "><a href="../02-cybersec/index.html"><strong aria-hidden="true">4.20.</strong> Cyber Security</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.21.</strong> BasicData Security</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.22.</strong> Pemrograman Jaringan &amp; IoT</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.23.</strong> Network Management &amp; Benchmarking</div></li></ol></li><li class="chapter-item expanded "><a href="../09-kripto/index.html"><strong aria-hidden="true">5.</strong> Kriptografi</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../09-kripto/gcd.html"><strong aria-hidden="true">5.1.</strong> GCD &amp; EGCD</a></li><li class="chapter-item expanded "><a href="../09-kripto/crt.html"><strong aria-hidden="true">5.2.</strong> Chinese Remainder Theorem</a></li><li class="chapter-item expanded "><a href="../09-kripto/modular-inverse.html"><strong aria-hidden="true">5.3.</strong> Modular Mulitplicative Inverse</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.4.</strong> Block Cipher</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">5.4.1.</strong> ECB</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.4.2.</strong> CBC</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.4.3.</strong> CFB</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.4.4.</strong> OFB</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.4.5.</strong> Counter Mode</div></li></ol></li><li class="chapter-item expanded "><a href="../09-kripto/cd-shannon.html"><strong aria-hidden="true">5.5.</strong> Confusion &amp; Diffusion Shannon</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.6.</strong> Iterated Cipher</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.7.</strong> Feistel Network</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.8.</strong> S-Box</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.9.</strong> DES</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.10.</strong> RSA</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.11.</strong> Common Modulus Attack - RSA</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.12.</strong> ECC</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.13.</strong> NTRU</div></li><li class="chapter-item expanded "><a href="../09-kripto/ds.html"><strong aria-hidden="true">5.14.</strong> Digital Signature</a></li><li class="chapter-item expanded "><a href="../09-kripto/dss.html"><strong aria-hidden="true">5.15.</strong> Digital Signature Standard</a></li><li class="chapter-item expanded "><a href="../09-kripto/mac.html"><strong aria-hidden="true">5.16.</strong> MAC</a></li><li class="chapter-item expanded "><a href="../09-kripto/dc.html"><strong aria-hidden="true">5.17.</strong> Digital Certificate</a></li><li class="chapter-item expanded "><a href="../09-kripto/pk.html"><strong aria-hidden="true">5.18.</strong> Protokol Kriptografi</a></li><li class="chapter-item expanded "><a href="../09-kripto/ssl.html"><strong aria-hidden="true">5.19.</strong> SSL</a></li></ol></li><li class="chapter-item expanded "><a href="../10-ai/index.html"><strong aria-hidden="true">6.</strong> Artificial Intelligence</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../10-ai/cnn.html"><strong aria-hidden="true">6.1.</strong> Convolutional Neural Network</a></li><li class="chapter-item expanded "><a href="../10-ai/gabor-filter.html"><strong aria-hidden="true">6.2.</strong> Gabor Filter</a></li><li class="chapter-item expanded "><a href="../10-ai/hmm.html"><strong aria-hidden="true">6.3.</strong> Hidden Markov Model</a></li><li class="chapter-item expanded "><a href="../10-ai/pca.html"><strong aria-hidden="true">6.4.</strong> Principal Component Analysis</a></li></ol></li><li class="chapter-item expanded "><a href="../07-robotics/index.html"><strong aria-hidden="true">7.</strong> Robotics</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../07-robotics/arduino.html"><strong aria-hidden="true">7.1.</strong> Arduino</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../07-robotics/arduinoBoard.html"><strong aria-hidden="true">7.1.1.</strong> Arduino Board</a></li><li class="chapter-item expanded "><a href="../07-robotics/arduinoDataType.html"><strong aria-hidden="true">7.1.2.</strong> Arduino Data Types</a></li><li class="chapter-item expanded "><a href="../07-robotics/arduinoCoding.html"><strong aria-hidden="true">7.1.3.</strong> Arduino Coding</a></li><li class="chapter-item expanded "><a href="../07-robotics/arduinoFuncLib.html"><strong aria-hidden="true">7.1.4.</strong> Arduino Function Lbraries</a></li></ol></li><li class="chapter-item expanded "><a href="../07-robotics/android-studio.html"><strong aria-hidden="true">7.2.</strong> Android Studio</a></li></ol></li><li class="chapter-item expanded "><a href="../03-ctf/index.html"><strong aria-hidden="true">8.</strong> Capture The Flag</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../03-ctf/overthewire.html"><strong aria-hidden="true">8.1.</strong> Overthewire</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../03-ctf/overtw-bandit.html"><strong aria-hidden="true">8.1.1.</strong> Bandit</a></li><li class="chapter-item expanded "><a href="../03-ctf/overtw-natas.html"><strong aria-hidden="true">8.1.2.</strong> Natas</a></li></ol></li><li class="chapter-item expanded "><a href="../03-ctf/binary-exploitation.html"><strong aria-hidden="true">8.2.</strong> Binary Exploitation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../03-ctf/pwn-shellcode.html"><strong aria-hidden="true">8.2.1.</strong> Pwn &amp; Shellcode</a></li><li class="chapter-item expanded "><a href="../03-ctf/coba-shellcode.html"><strong aria-hidden="true">8.2.2.</strong> Coba</a></li><li class="chapter-item expanded "><a href="../03-ctf/protostar.html"><strong aria-hidden="true">8.2.3.</strong> Protostar</a></li></ol></li><li class="chapter-item expanded "><a href="../03-ctf/exploit-education.html"><strong aria-hidden="true">8.3.</strong> Exploit Education</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../03-ctf/Eprotostar.html"><strong aria-hidden="true">8.3.1.</strong> Protostar</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../03-ctf/Eprotostar-stack0.html"><strong aria-hidden="true">8.3.1.1.</strong> Stack0</a></li><li class="chapter-item expanded "><a href="../03-ctf/Eprotostar-stack1.html"><strong aria-hidden="true">8.3.1.2.</strong> Stack1</a></li><li class="chapter-item expanded "><a href="../03-ctf/Eprotostar-stack2.html"><strong aria-hidden="true">8.3.1.3.</strong> Stack2</a></li><li class="chapter-item expanded "><a href="../03-ctf/Eprotostar-stack3.html"><strong aria-hidden="true">8.3.1.4.</strong> Stack3</a></li><li class="chapter-item expanded "><a href="../03-ctf/Eprotostar-stack4.html"><strong aria-hidden="true">8.3.1.5.</strong> Stack4</a></li><li class="chapter-item expanded "><a href="../03-ctf/Eprotostar-stack5.html"><strong aria-hidden="true">8.3.1.6.</strong> Stack5</a></li><li class="chapter-item expanded "><a href="../03-ctf/Eprotostar-stack6.html"><strong aria-hidden="true">8.3.1.7.</strong> Stack6</a></li></ol></li><li class="chapter-item expanded "><a href="../03-ctf/Ephoenix.html"><strong aria-hidden="true">8.3.2.</strong> Phoenix</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../03-ctf/Ephoenix-stack0.html"><strong aria-hidden="true">8.3.2.1.</strong> Stack0</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../03-ctf/hackthebox.html"><strong aria-hidden="true">8.4.</strong> Hackthebox</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../03-ctf/htb-meow.html"><strong aria-hidden="true">8.4.1.</strong> Meow</a></li><li class="chapter-item expanded "><a href="../03-ctf/htb-fawn.html"><strong aria-hidden="true">8.4.2.</strong> Fawn</a></li><li class="chapter-item expanded "><a href="../03-ctf/htb-dancing.html"><strong aria-hidden="true">8.4.3.</strong> Dancing</a></li><li class="chapter-item expanded "><a href="../03-ctf/htb-explosion.html"><strong aria-hidden="true">8.4.4.</strong> Explosion</a></li><li class="chapter-item expanded "><a href="../03-ctf/htb-preignition.html"><strong aria-hidden="true">8.4.5.</strong> Preignition</a></li><li class="chapter-item expanded "><a href="../03-ctf/htb-appointment.html"><strong aria-hidden="true">8.4.6.</strong> Appointment</a></li><li class="chapter-item expanded "><a href="../03-ctf/htb-sequel.html"><strong aria-hidden="true">8.4.7.</strong> Sequel</a></li><li class="chapter-item expanded "><a href="../03-ctf/htb-crocodile.html"><strong aria-hidden="true">8.4.8.</strong> Crocodile</a></li><li class="chapter-item expanded "><a href="../03-ctf/htb-archetype.html"><strong aria-hidden="true">8.4.9.</strong> Archetype</a></li><li class="chapter-item expanded "><a href="../03-ctf/htb-oopsie.html"><strong aria-hidden="true">8.4.10.</strong> Oopsie</a></li><li class="chapter-item expanded "><a href="../03-ctf/htb-vaccine.html"><strong aria-hidden="true">8.4.11.</strong> Vaccine</a></li><li class="chapter-item expanded "><a href="../03-ctf/htb-unified.html"><strong aria-hidden="true">8.4.12.</strong> Unified</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.5.</strong> Cryptography</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.6.</strong> Reverse Engineering</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.7.</strong> Web</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.8.</strong> Forensic</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.9.</strong> Miscellaneous</div></li><li class="chapter-item expanded "><a href="../03-ctf/assembly.html"><strong aria-hidden="true">8.10.</strong> Assembly</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../03-ctf/assembly-basic-syntax.html"><strong aria-hidden="true">8.10.1.</strong> Basic Syntax</a></li><li class="chapter-item expanded "><a href="../03-ctf/assembly-registers.html"><strong aria-hidden="true">8.10.2.</strong> Registers</a></li><li class="chapter-item expanded "><a href="../03-ctf/assembly-syscalls.html"><strong aria-hidden="true">8.10.3.</strong> System Calls</a></li></ol></li><li class="chapter-item expanded "><a href="../03-ctf/john-hammond.html"><strong aria-hidden="true">8.11.</strong> John-Hammond</a></li><li class="chapter-item expanded "><a href="../03-ctf/ctflicense.html"><strong aria-hidden="true">8.12.</strong> Contoh cracking CTF licence key</a></li><li class="chapter-item expanded "><a href="../03-ctf/writeup.html"><strong aria-hidden="true">8.13.</strong> Writeup</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../03-ctf/compfest.html"><strong aria-hidden="true">8.13.1.</strong> COMPFEST CTF 2021</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../03-ctf/compfest-snab.html"><strong aria-hidden="true">8.13.1.1.</strong> Snab? Yes, Snab</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../03-ctf/ctf-random.html"><strong aria-hidden="true">8.14.</strong> Random</a></li></ol></li><li class="chapter-item expanded "><a href="../08-kali/index.html"><strong aria-hidden="true">9.</strong> Kali Linux Tools</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../08-kali/sqlmap.html"><strong aria-hidden="true">9.1.</strong> sqlmap</a></li></ol></li><li class="chapter-item expanded "><a href="../06-tools/index.html"><strong aria-hidden="true">10.</strong> Tools</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../06-tools/nmap.html"><strong aria-hidden="true">10.1.</strong> Nmap</a></li><li class="chapter-item expanded "><a href="../06-tools/python.html"><strong aria-hidden="true">10.2.</strong> Python</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../06-tools/python-pwn.html"><strong aria-hidden="true">10.2.1.</strong> Pwn</a></li><li class="chapter-item expanded "><a href="../06-tools/python-random.html"><strong aria-hidden="true">10.2.2.</strong> Random</a></li><li class="chapter-item expanded "><a href="../06-tools/python-zlib.html"><strong aria-hidden="true">10.2.3.</strong> Zlib</a></li><li class="chapter-item expanded "><a href="../06-tools/python-req.html"><strong aria-hidden="true">10.2.4.</strong> Request</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../06-tools/python-req-get.html"><strong aria-hidden="true">10.2.4.1.</strong> GET</a></li><li class="chapter-item expanded "><a href="../06-tools/python-req-post.html"><strong aria-hidden="true">10.2.4.2.</strong> POST</a></li></ol></li><li class="chapter-item expanded "><a href="../06-tools/python-linkedlist.html"><strong aria-hidden="true">10.2.5.</strong> linkedlist</a></li></ol></li><li class="chapter-item expanded "><a href="../06-tools/c.html"><strong aria-hidden="true">10.3.</strong> C</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../06-tools/c-fflush.html"><strong aria-hidden="true">10.3.1.</strong> fflush()</a></li><li class="chapter-item expanded "><a href="../06-tools/c-memset.html"><strong aria-hidden="true">10.3.2.</strong> memset()</a></li></ol></li><li class="chapter-item expanded "><a href="../06-tools/curl.html"><strong aria-hidden="true">10.4.</strong> Curl</a></li><li class="chapter-item expanded "><a href="../06-tools/tcpdump.html"><strong aria-hidden="true">10.5.</strong> Tcpdump</a></li><li class="chapter-item expanded "><a href="../06-tools/gdb.html"><strong aria-hidden="true">10.6.</strong> GDB</a></li><li class="chapter-item expanded "><a href="../06-tools/radare2.html"><strong aria-hidden="true">10.7.</strong> Radare2</a></li><li class="chapter-item expanded "><a href="../06-tools/cutter.html"><strong aria-hidden="true">10.8.</strong> Cutter</a></li><li class="chapter-item expanded "><a href="../06-tools/fcrackzip.html"><strong aria-hidden="true">10.9.</strong> fcrackzip</a></li><li class="chapter-item expanded "><a href="../06-tools/ngrok.html"><strong aria-hidden="true">10.10.</strong> ngrok</a></li><li class="chapter-item expanded "><a href="../06-tools/netcat.html"><strong aria-hidden="true">10.11.</strong> Netcat</a></li><li class="chapter-item expanded "><a href="../06-tools/shell-script.html"><strong aria-hidden="true">10.12.</strong> Shell Script</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../06-tools/shell-spcChar.html"><strong aria-hidden="true">10.12.1.</strong> Special Character</a></li><li class="chapter-item expanded "><a href="../06-tools/shell-Operators.html"><strong aria-hidden="true">10.12.2.</strong> Operators</a></li><li class="chapter-item expanded "><a href="../06-tools/shell-Array.html"><strong aria-hidden="true">10.12.3.</strong> Array</a></li><li class="chapter-item expanded "><a href="../06-tools/shell-decision.html"><strong aria-hidden="true">10.12.4.</strong> Decision</a></li><li class="chapter-item expanded "><a href="../06-tools/shell-loop.html"><strong aria-hidden="true">10.12.5.</strong> Loop</a></li></ol></li><li class="chapter-item expanded "><a href="../06-tools/openssl.html"><strong aria-hidden="true">10.13.</strong> OpenSSL</a></li><li class="chapter-item expanded "><a href="../06-tools/archive.html"><strong aria-hidden="true">10.14.</strong> Archive File</a></li><li class="chapter-item expanded "><a href="../06-tools/hydra.html"><strong aria-hidden="true">10.15.</strong> Hydra</a></li><li class="chapter-item expanded "><a href="../06-tools/ironbee.html"><strong aria-hidden="true">10.16.</strong> IronBee</a></li><li class="chapter-item expanded "><a href="../06-tools/modsecurity.html"><strong aria-hidden="true">10.17.</strong> ModSecurity</a></li><li class="chapter-item expanded "><a href="../06-tools/commix.html"><strong aria-hidden="true">10.18.</strong> Commix</a></li><li class="chapter-item expanded "><a href="../06-tools/burpsuite.html"><strong aria-hidden="true">10.19.</strong> Burp Suite</a></li><li class="chapter-item expanded "><a href="../06-tools/owasp.html"><strong aria-hidden="true">10.20.</strong> OWASP</a></li><li class="chapter-item expanded "><a href="../06-tools/maltego.html"><strong aria-hidden="true">10.21.</strong> Maltego</a></li><li class="chapter-item expanded "><a href="../06-tools/gns3.html"><strong aria-hidden="true">10.22.</strong> GNS3</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">10.23.</strong> Ghidra</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">10.24.</strong> Ida</div></li></ol></li><li class="chapter-item expanded "><a href="../04-tips/index.html"><strong aria-hidden="true">11.</strong> TIPS</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../04-tips/guide-this-website.html"><strong aria-hidden="true">11.1.</strong> Guide This Web</a></li><li class="chapter-item expanded "><a href="../04-tips/mdbook.html"><strong aria-hidden="true">11.2.</strong> Mdbook</a></li><li class="chapter-item expanded "><a href="../04-tips/github.html"><strong aria-hidden="true">11.3.</strong> Github</a></li><li class="chapter-item expanded "><a href="../04-tips/deb-file.html"><strong aria-hidden="true">11.4.</strong> Install / Remove .deb in ubuntu</a></li><li class="chapter-item expanded "><a href="../04-tips/sql-server.html"><strong aria-hidden="true">11.5.</strong> Install sql server ubuntu 20.04</a></li><li class="chapter-item expanded "><a href="../04-tips/set-ip-static.html"><strong aria-hidden="true">11.6.</strong> Setting IP Static</a></li><li class="chapter-item expanded "><a href="../04-tips/set-https.html"><strong aria-hidden="true">11.7.</strong> HTTPS in Local Network (Ubuntu Server 20.04)</a></li><li class="chapter-item expanded "><a href="../04-tips/itcareer.html"><strong aria-hidden="true">11.8.</strong> IT Career Roadmap</a></li><li class="chapter-item expanded "><a href="../04-tips/wlan-monitor-mode.html"><strong aria-hidden="true">11.9.</strong> Wlan Monitor Mode</a></li><li class="chapter-item expanded "><a href="../04-tips/virtualbox.html"><strong aria-hidden="true">11.10.</strong> Virtualbox</a></li><li class="chapter-item expanded "><a href="../04-tips/terminal-path.html"><strong aria-hidden="true">11.11.</strong> Path variable terminal</a></li><li class="chapter-item expanded "><a href="../04-tips/linux-user-group.html"><strong aria-hidden="true">11.12.</strong> Linux Users &amp; Groups</a></li><li class="chapter-item expanded "><a href="../04-tips/replikasi-onnocenter.html"><strong aria-hidden="true">11.13.</strong> Replikasi Onnocenter</a></li><li class="chapter-item expanded "><a href="../04-tips/moodle.html"><strong aria-hidden="true">11.14.</strong> Install Moodle</a></li><li class="chapter-item expanded "><a href="../04-tips/ros.html"><strong aria-hidden="true">11.15.</strong> Install ROS</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../04-tips/ros-melodic.html"><strong aria-hidden="true">11.15.1.</strong> ROS Melodic</a></li><li class="chapter-item expanded "><a href="../04-tips/ros-noetic.html"><strong aria-hidden="true">11.15.2.</strong> ROS Noetic</a></li><li class="chapter-item expanded "><a href="../04-tips/ros-opencv.html"><strong aria-hidden="true">11.15.3.</strong> Install ROS &amp; Opencv</a></li></ol></li><li class="chapter-item expanded "><a href="../04-tips/hapus-dualboot.html"><strong aria-hidden="true">11.16.</strong> Hapus Dual Boot</a></li><li class="chapter-item expanded "><a href="../04-tips/membuat-file-iso.html"><strong aria-hidden="true">11.17.</strong> Membuat File ISO</a></li><li class="chapter-item expanded "><a href="../04-tips/docker.html"><strong aria-hidden="true">11.18.</strong> Docker</a></li><li class="chapter-item expanded "><a href="../04-tips/tips-random.html"><strong aria-hidden="true">11.19.</strong> Random</a></li></ol></li><li class="chapter-item expanded "><a href="../08-ujian/index.html"><strong aria-hidden="true">12.</strong> Pembahasan Ujian</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">12.1.</strong> Cisco Packet Tracer</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../08-ujian/cisco-pt-quiz1.html"><strong aria-hidden="true">12.1.1.</strong> Quiz 1</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">12.1.2.</strong> Quiz 2</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">12.2.</strong> Cisco Introduction to CyberSec</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../08-ujian/cisco-ics-quiz1.html"><strong aria-hidden="true">12.2.1.</strong> Chapter 1 Quiz</a></li><li class="chapter-item expanded "><a href="../08-ujian/cisco-ics-quiz2.html"><strong aria-hidden="true">12.2.2.</strong> Chapter 2 Quiz</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">12.3.</strong> Onnocenter/moodle</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">12.3.1.</strong> Jaringan Komputer</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">12.3.1.1.</strong> TCP/IP</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">12.3.1.2.</strong> DNS</div></li></ol></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Wetofu</h1>
+
+                    <div class="right-buttons">
+                        
+                        
+                        <a href="https://github.com/syahrolus" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="openssh-key"><a class="header" href="#openssh-key">OpenSSH Key</a></h1>
+<ul>
+<li><a href="#public-and-private-keys">Public and Private Keys</a></li>
+<li><a href="#key-based-ssh-logins">Key-Based SSH Logins</a></li>
+<li><a href="#generating-rsa-keys">Generating RSA Keys</a>
+<ul>
+<li><a href="#choosing-a-good-passphrase">Choosing a good passphrase</a></li>
+<li><a href="#key-encryption-level">Key Encryption Level</a></li>
+<li><a href="#password-authentication">Password Authentication</a></li>
+</ul>
+</li>
+<li><a href="#transfer-client-key-to-host">Transfer Client Key to Host</a></li>
+<li><a href="#troubleshooting">Troubleshooting</a></li>
+<li><a href="#where-to-from-here">Where to From Here</a></li>
+<li><a href="#praktikum">Praktikum</a></li>
+</ul>
+<h2 id="public-and-private-keys"><a class="header" href="#public-and-private-keys">Public and Private Keys</a></h2>
+<p>Public key authentication is more secure than password authentication. This is particularly important if the computer is visible on the internet. If you don't think it's important, try logging the login attempts you get for the next week. My computer - a perfectly ordinary desktop PC - had over 4,000 attempts to guess my password and almost 2,500 break-in attempts in the last week alone.</p>
+<p>With public key authentication, the authenticating entity has a public key and a private key. Each key is a large number with special mathematical properties. The private key is kept on the computer you log in from, while the public key is stored on the .ssh/authorized_keys file on all the computers you want to log in to. When you log in to a computer, the SSH server uses the public key to &quot;lock&quot; messages in a way that can only be &quot;unlocked&quot; by your private key - this means that even the most resourceful attacker can't snoop on, or interfere with, your session. As an extra security measure, most SSH programs store the private key in a passphrase-protected format, so that if your computer is stolen or broken in to, you should have enough time to disable your old public key before they break the passphrase and start using your key. Wikipedia has a more detailed explanation of how keys work.</p>
+<p>Public key authentication is a much better solution than passwords for most people. In fact, if you don't mind leaving a private key unprotected on your hard disk, you can even use keys to do secure automatic log-ins - as part of a network backup, for example. Different SSH programs generate public keys in different ways, but they all generate public keys in a similar format:</p>
+<pre><code>&lt;ssh-rsa or ssh-dss&gt; &lt;really long string of nonsense&gt; &lt;username&gt;@&lt;host&gt;
+</code></pre>
+<h2 id="key-based-ssh-logins"><a class="header" href="#key-based-ssh-logins">Key-Based SSH Logins</a></h2>
+<p>Key-based authentication is the most secure of several modes of authentication usable with OpenSSH, such as plain password and Kerberos tickets. Key-based authentication has several advantages over password authentication, for example the key values are significantly more difficult to brute-force, or guess than plain passwords, provided an ample key length. Other authentication methods are only used in very specific situations.</p>
+<p>SSH can use either &quot;RSA&quot; (Rivest-Shamir-Adleman) or &quot;DSA&quot; (&quot;Digital Signature Algorithm&quot;) keys. Both of these were considered state-of-the-art algorithms when SSH was invented, but DSA has come to be seen as less secure in recent years. RSA is the only recommended choice for new keys, so this guide uses &quot;RSA key&quot; and &quot;SSH key&quot; interchangeably.</p>
+<p>Key-based authentication uses two keys, one &quot;public&quot; key that anyone is allowed to see, and another &quot;private&quot; key that only the owner is allowed to see. To securely communicate using key-based authentication, one needs to create a key pair, securely store the private key on the computer one wants to log in from, and store the public key on the computer one wants to log in to.</p>
+<p>Using key based logins with ssh is generally considered more secure than using plain password logins. This section of the guide will explain the process of generating a set of public/private RSA keys, and using them for logging into your Ubuntu computer(s) via OpenSSH.</p>
+<h2 id="generating-rsa-keys"><a class="header" href="#generating-rsa-keys">Generating RSA Keys</a></h2>
+<p>The first step involves creating a set of RSA keys for use in authentication.</p>
+<p>This should be done on the client.</p>
+<p>To create your public and private SSH keys on the command-line:</p>
+<pre><code>mkdir ~/.ssh
+chmod 700 ~/.ssh
+ssh-keygen -t rsa
+</code></pre>
+<p>You will be prompted for a location to save the keys, and a passphrase for the keys. This passphrase will protect your private key while it's stored on the hard drive:</p>
+<pre><code>Generating public/private rsa key pair.
+Enter file in which to save the key (/home/b/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/b/.ssh/id_rsa.
+Your public key has been saved in /home/b/.ssh/id_rsa.pub.
+</code></pre>
+<p>Your public key is now available as .ssh/id_rsa.pub in your home folder.</p>
+<p>Congratulations! You now have a set of keys. Now it's time to make your systems allow you to login with them</p>
+<h3 id="choosing-a-good-passphrase"><a class="header" href="#choosing-a-good-passphrase">Choosing a good passphrase</a></h3>
+<p>You need to change all your locks if your RSA key is stolen. Otherwise the thief could impersonate you wherever you authenticate with that key.</p>
+<p>An SSH key passphrase is a secondary form of security that gives you a little time when your keys are stolen. If your RSA key has a strong passphrase, it might take your attacker a few hours to guess by brute force. That extra time should be enough to log in to any computers you have an account on, delete your old key from the .ssh/authorized_keys file, and add a new key.</p>
+<p>Your SSH key passphrase is only used to protect your private key from thieves. It's never transmitted over the Internet, and the strength of your key has nothing to do with the strength of your passphrase.</p>
+<p>The decision to protect your key with a passphrase involves convenience x security. Note that if you protect your key with a passphrase, then when you type the passphrase to unlock it, your local computer will generally leave the key unlocked for a time. So if you use the key multiple times without logging out of your local account in the meantime, you will probably only have to type the passphrase once.</p>
+<p>If you do adopt a passphrase, pick a strong one and store it securely in a password manager. You may also write it down on a piece of paper and keep it in a secure place. If you choose not to protect the key with a passphrase, then just press the return when ssh-keygen asks.</p>
+<h3 id="key-encryption-level"><a class="header" href="#key-encryption-level">Key Encryption Level</a></h3>
+<p>Note: The default is a 2048 bit key. You can increase this to 4096 bits with the -b flag (Increasing the bits makes it harder to crack the key by brute force methods).</p>
+<pre><code>ssh-keygen -t rsa -b 4096
+</code></pre>
+<h3 id="password-authentication"><a class="header" href="#password-authentication">Password Authentication</a></h3>
+<p>The main problem with public key authentication is that you need a secure way of getting the public key onto a computer before you can log in with it. If you will only ever use an SSH key to log in to your own computer from a few other computers (such as logging in to your PC from your laptop), you should copy your SSH keys over on a memory stick, and disable password authentication altogether. If you would like to log in from other computers from time to time (such as a friend's PC), make sure you have a strong password.</p>
+<h2 id="transfer-client-key-to-host"><a class="header" href="#transfer-client-key-to-host">Transfer Client Key to Host</a></h2>
+<p>The key you need to transfer to the host is the public one. If you can log in to a computer over SSH using a password, you can transfer your RSA key by doing the following from your own computer:</p>
+<pre><code>ssh-copy-id &lt;username&gt;@&lt;host&gt;
+</code></pre>
+<p>Where <username> and <host> should be replaced by your username and the name of the
+computer you're transferring your key to.</p>
+<p>(i) Due to this bug, you cannot specify a port other than the standard port 22. You can work around this by issuing the command like this: ssh-copy-id &quot;<username>@<host> -p &lt;port_nr&gt;&quot;. If you are using the standard port 22, you can ignore this tip.</p>
+<p>Another alternative is to copy the public key file to the server and concatenate it onto the authorized_keys file manually. It is wise to back that up first:</p>
+<pre><code>cp authorized_keys authorized_keys_Backup
+cat id_rsa.pub &gt;&gt; authorized_keys
+</code></pre>
+<p>You can make sure this worked by doing:</p>
+<pre><code>ssh &lt;username&gt;@&lt;host&gt;
+</code></pre>
+<p>You should be prompted for the passphrase for your key:</p>
+<pre><code>Enter passphrase for key '/home/&lt;user&gt;/.ssh/id_rsa':
+</code></pre>
+<p>Enter your passphrase, and provided host is configured to allow key-based logins, you should then be logged in as usual.</p>
+<h2 id="troubleshooting"><a class="header" href="#troubleshooting">Troubleshooting</a></h2>
+<p><strong>Encrypted Home Directory</strong></p>
+<p>If you have an encrypted home directory, SSH cannot access your authorized_keys file because it is inside your encrypted home directory and won't be available until after you are authenticated. Therefore, SSH will default to password authentication.</p>
+<p>To solve this, create a folder outside your home named /etc/ssh/&amp;ltusername&gt; (replace &quot;<username>&quot; with your actual username). This directory should have 755 permissions and be owned by the user. Move the authorized_keys file into it. The authorized_keys file should have 644 permissions and be owned by the user.</p>
+<p>Then edit your /etc/ssh/sshd_config and add:</p>
+<pre><code>AuthorizedKeysFile   /etc/ssh/%u/authorized_keys
+</code></pre>
+<p>Finally, restart ssh with:</p>
+<pre><code>sudo service ssh restart
+</code></pre>
+<p>The next time you connect with SSH you should not have to enter your password.</p>
+<p><strong>username@host's password:</strong></p>
+<p>If you are not prompted for the passphrase, and instead get just the</p>
+<pre><code>username@host's password:
+</code></pre>
+<p>prompt as usual with password logins, then read on. There are a few things which could prevent this from working as easily as demonstrated above. On default Ubuntu installs however, the above examples should work. If not, then check the following condition, as it is the most frequent cause:</p>
+<p>On the host computer, ensure that the /etc/ssh/sshd_config contains the following lines, and that they are uncommented;</p>
+<pre><code>PubkeyAuthentication yes
+RSAAuthentication yes
+</code></pre>
+<p>If not, add them, or uncomment them, restart OpenSSH, and try logging in again. If you get the passphrase prompt now, then congratulations, you're logging in with a key!</p>
+<p><strong>Permission denied (publickey)</strong></p>
+<p>If you're sure you've correctly configured sshd_config, copied your ID, and have your private key in the .ssh directory, and still getting this error:</p>
+<pre><code>Permission denied (publickey).
+</code></pre>
+<p>Chances are, your /home/<user> or ~/.ssh/authorized_keys permissions are too open by OpenSSH standards. You can get rid of this problem by issuing the following commands:</p>
+<pre><code>chmod go-w ~/
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys
+</code></pre>
+<p><strong>Error: Agent admitted failure to sign using the key.</strong></p>
+<p>This error occurs when the ssh-agent on the client is not yet managing the key. Issue the
+following commands to fix:</p>
+<pre><code>ssh-add
+</code></pre>
+<p>This command should be entered after you have copied your public key to the host computer.</p>
+<p><strong>Debugging and sorting out further problems</strong></p>
+<p>The permissions of files and folders is crucial to this working. You can get debugging information from both the client and server.</p>
+<p>if you think you have set it up correctly , yet still get asked for the password, try starting the server with debugging output to the terminal.</p>
+<pre><code>sudo /usr/sbin/sshd -d
+</code></pre>
+<p>To connect and send information to the client terminal</p>
+<pre><code>ssh -v ( or -vv) username@host's
+</code></pre>
+<h2 id="where-to-from-here"><a class="header" href="#where-to-from-here">Where to From Here</a></h2>
+<p>No matter how your public key was generated, you can add it to your Ubuntu system by opening the file .ssh/authorized_keys in your favourite text editor and adding the key to the bottom of the file. You can also limit the SSH features that the key can use, such as disallowing port-forwarding or only allowing a specific command to be run. This is done by adding &quot;options&quot; before the SSH key, on the same line in the authorized_keys file. For example, if you maintain a CVS repository, you could add a line like this:</p>
+<pre><code>command=&quot;/usr/bin/cvs server&quot;,no-agent-forwarding,no-port-forwarding,no-X11-forwarding,no-user-rc ssh-dss &lt;string of nonsense&gt;...
+</code></pre>
+<p>When the user with the specified key logged in, the server would automatically run /usr/bin/cvs server, ignoring any requests from the client to run another command such as a shell. For more information, see the sshd man page. /755</p>
+<h2 id="praktikum"><a class="header" href="#praktikum">Praktikum</a></h2>
+<p>Server / Computer yang akan diberi OpenSSH :</p>
+<ul>
+cek apakah ada folder ~/.ssh  
+jika tidak, maka :
+<pre><code>mkdir ~/.ssh
+chmod 700 ~/.ssh    
+ssh-keygen -t rsa
+</code></pre>
+<p>maka akan ada pertanyaan</p>
+<pre><code>Generating public/private rsa key pair.
+Enter file in which to save the key (/home/b/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/b/.ssh/id_rsa.
+Your public key has been saved in /home/b/.ssh/id_rsa.pub.
+</code></pre>
+<p>misal disimpan di folder <code>/home/b/.ssh/</code> dan memberi nama <code>id_rsa</code><br />
+maka akan muncul 2 file, <code>id_rsa</code> dan <code>id_rsa.pub</code></p>
+<p>lalu buat authorized_keys</p>
+<pre><code>cat id_rsa.pub &gt;&gt; authorized_keys
+</code></pre>
+<p>lalu copas ke komputer client</p>
+</ul>
+<p>Client :</p>
+<ul>
+<pre><code>ssh -i id_rsa &lt;user_target&gt;@&lt;ip_target&gt;
+</code></pre>
+</ul>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../02-cybersec/ssh-configure.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../02-cybersec/ssh-port-forwarding.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../02-cybersec/ssh-configure.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../02-cybersec/ssh-port-forwarding.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
